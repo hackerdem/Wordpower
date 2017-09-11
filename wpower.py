@@ -6,19 +6,19 @@ from openpyxl import load_workbook
 from apscheduler.schedulers.blocking import BlockingScheduler
 import pyttsx3 as vol
 import os
-import pandas as pd
+
 # volume related issues change hear later needs to eb worked on##############
 def pronounce_meaning(mean):
-    engine=vol.init()
-    engine.setProperty('rate',200)
-    engine.setProperty('volume',0.7)
-    engine.setProperty('voice',1)
-    engine.setProperty('language',"en-us")    
-    engine.say('means')
+    engine1=vol.init()
+    engine1.setProperty('rate',200)
+    engine1.setProperty('volume',0.7)
+    engine1.setProperty('voice',1)
+    engine1.setProperty('languages',"en-us")    
+    engine1.say('means')
     time.sleep(1)    
-    engine.say(mean)
-    engine.runAndWait()
-    engine.stop()
+    engine1.say(mean)
+    engine1.runAndWait()
+    engine1.stop()
 def pronounce(word,mean):
     engine=vol.init()
     engine.setProperty('rate',200)
@@ -27,7 +27,7 @@ def pronounce(word,mean):
     engine.say(word)
     engine.runAndWait() 
     engine.stop()
-    #engine.voice.getProperty('languages')
+
     time.sleep(2)
     #engine.setProperty('languages','en-us') 
     pronounce_meaning(mean)
@@ -51,7 +51,6 @@ def update_excel(key,value):
         print(e)
         pass
 def discard_word(key,value):
-    
     val_list=[key,value[0],value[1]]
     try:
         for i in range(1,200):
@@ -73,13 +72,15 @@ def discard_word(key,value):
                     discard=discard+1
                 columns=['A','B','C']
                 for d in columns:
+            
                     discardedWords['{}{}'.format(d,discard)]=val_list[columns.index(d)]
                     
                 for i in range(1,200):
                     if key==sheet.cell(row=i,column=1).value:
                         for k in columns:
+                            cval=1+columns.index(k)
                             sheet['{}{}'.format(k,i)]=None
-                            sheet['{}{}'.format(k,i)]=repoSheet.cell(row=counter,column=int(1+columns.index(k))).value
+                            sheet['{}{}'.format(k,i)]=repoSheet.cell(row=counter,column=cval).value
                             repoSheet['{}{}'.format(k,counter)]=None
                         break
                 wbook.save('./wordList.xlsx') 
@@ -91,7 +92,7 @@ def update(wordlist):
     global root
     try:
         for key,value in wordlist.items():
-            if value[1]>99:
+            if value[1]!=None and value[1]>99:
                 discard_word(key,value)
             else:
                 var1.set(key)
@@ -110,7 +111,7 @@ def update(wordlist):
 def wait():
     os.system("pause")
 def hidden():
-    print('hello')
+
     """label1.width=0
     label1.height=0
     mainwindow.update()"""
@@ -177,16 +178,12 @@ class App:
         discardedWords=wbook.get_sheet_by_name(sheetList[2])
             
         wordList={}
-        for i in range(1,20):
+        for i in range(1,100):
             if sheet.cell(row=i,column=1).value!=None:
                 try:
                     wordList['{}'.format(sheet.cell(row=i,column=1).value)]=[sheet.cell(row=i,column=2).value,sheet.cell(row=i,column=3).value]
                 except Exception:pass
             else:
-                
-                for key,value in wordList.items():
-                    """try:print(key,value[0])
-                    except Exception:pass"""
                 break 
         return wordList               
 # ############################# #########################################   
@@ -212,7 +209,7 @@ def main():
     update(wordlist)
     root.mainloop()
 main()  
-"""# schedule to appear on the ottom right of the screen   ###################
+"""# schedule to appear on the bottom right of the screen   ###################
 def schedule():
     scheduler = BlockingScheduler()
     scheduler.add_job(main, 'interval', seconds=5)
