@@ -8,10 +8,10 @@ dependencies={
     'openpyxl':'2.5.0a1',
     'apscheduler':'3.3.1',
     'pyttsx3':'2.6',
+	'unidecode':'0.04.20',
     #'twisted':'16.4.0' # just for testing purpose not required delte it later
 }
 
-    
 try:
    for key,value in dependencies.items():
             dep=workingSet.require('{}>={}'.format(key,value))

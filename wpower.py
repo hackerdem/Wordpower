@@ -2,18 +2,24 @@ from tkinter import *
 import time
 import datetime
 from openpyxl import load_workbook
-#from openpyxl.utils import coordinate_from_string as rowcol
 from apscheduler.schedulers.blocking import BlockingScheduler
 import pyttsx3 as vol
 import os
+from unidecode import unidecode as udec
+#sanitarization
+def fixWord(word):
+    # this section added sice pronounciation is not good for french words containing signs
+    
+    return udec(word)
 
 # volume related issues change hear later needs to eb worked on##############
+# make engine a class for better programming practice
 def pronounce_meaning(mean):
     engine1=vol.init()
-    engine1.setProperty('rate',200)
+    engine1.setProperty('rate',150)
     engine1.setProperty('volume',0.7)
-    engine1.setProperty('voice',1)
-    engine1.setProperty('languages',"en-us")    
+    v=engine1.getProperty('voices')
+    engine1.setProperty('voice',v[1].id)   
     engine1.say('means')
     time.sleep(1)    
     engine1.say(mean)
@@ -23,13 +29,10 @@ def pronounce(word,mean):
     engine=vol.init()
     engine.setProperty('rate',200)
     engine.setProperty('volume',0.7)
-    #engine.setProperty('languages','fr')
-    engine.say(word)
+    engine.say(fixWord(word))
     engine.runAndWait() 
     engine.stop()
-
     time.sleep(2)
-    #engine.setProperty('languages','en-us') 
     pronounce_meaning(mean)
     
     
