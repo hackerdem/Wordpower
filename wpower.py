@@ -1,5 +1,6 @@
 from tkinter import *
 import time
+import random
 import datetime
 from openpyxl import load_workbook
 from apscheduler.schedulers.blocking import BlockingScheduler
@@ -16,7 +17,7 @@ def fixWord(word):
 # make engine a class for better programming practice
 def pronounce_meaning(mean):
     engine1=vol.init()
-    engine1.setProperty('rate',150)
+    engine1.setProperty('rate',180)
     engine1.setProperty('volume',0.7)
     v=engine1.getProperty('voices')
     engine1.setProperty('voice',v[1].id)   
@@ -32,7 +33,7 @@ def pronounce(word,mean):
     engine.say(fixWord(word))
     engine.runAndWait() 
     engine.stop()
-    time.sleep(2)
+    time.sleep(1)
     pronounce_meaning(mean)
     
     
@@ -134,15 +135,15 @@ class App:
         
         label1.pack()  
         var2 = StringVar()
-        label2 = Label( master,compound=CENTER,width=21,height=2,border=0,font = "Helvetica 20 bold",
+        label2 = Label( master,anchor=CENTER,compound=CENTER,width=21,height=2,border=0,font = "Helvetica 20 bold",
                         bg="#FF9900",fg="#CC3333", textvariable=var2,
                         relief=RAISED )
                 
         
         label2.pack()  
-        """self.pause = Button(master, 
-                             text="PAUSE",bg='#CC3333',border=0, fg="#FFCC00",width=8,
-                             command=wait)
+        """ self.stop = Button(master, 
+                             text="STOP",bg='#CC3333',border=0, fg="#FFCC00",width=8,
+                             command=lambda : mainwindow.destroy())
         self.play = Button(master, 
                                      text="PLAY",bg='#CC3333',border=0, fg="#FFCC00",width=8,
                                      command=hidden)  
@@ -157,14 +158,14 @@ class App:
         self.voice = Button(master, 
                                                      text="VOICE",bg='#CC3333',border=0, fg="#FFCC00",width=8,
                                                      command=quit)          
-        self.pause.pack(side=LEFT)
+        self.stop.pack(side=LEFT)
         self.play.pack(side=LEFT)
         self.hide.pack(side=LEFT)
         self.discard.pack(side=LEFT)
         self.voice.pack(side=LEFT)
         self.slogan = Button(master,width=8,bg='#CC3333',border=0, fg="#FFCC00",
                                  text="POSITION")
-        self.slogan.pack(side=LEFT)"""        
+        self.slogan.pack(side=LEFT) """    
         mainwindow.pack(fill=BOTH, expand=YES)
         
     def getWords():
@@ -181,13 +182,17 @@ class App:
         discardedWords=wbook.get_sheet_by_name(sheetList[2])
             
         wordList={}
-        for i in range(1,100):
-            if sheet.cell(row=i,column=1).value!=None:
+        random_start=random.randrange(1,51,1)
+        print(random_start)
+        for i in range(10):
+            iterator=random_start+i if random_start+i<=50 else random_start+i-50
+            if sheet.cell(row=iterator,column=1).value!=None:
                 try:
                     wordList['{}'.format(sheet.cell(row=i,column=1).value)]=[sheet.cell(row=i,column=2).value,sheet.cell(row=i,column=3).value]
                 except Exception:pass
             else:
                 break 
+        print(wordList)
         return wordList               
 # ############################# #########################################   
 def placement(win):
@@ -211,28 +216,28 @@ def main():
     wordlist=App.getWords()
     update(wordlist)
     root.mainloop()
-main()  
-"""# schedule to appear on the bottom right of the screen   ###################
+#main()  
+# schedule to appear on the bottom right of the screen   ###################
 def schedule():
     scheduler = BlockingScheduler()
-    scheduler.add_job(main, 'interval', seconds=5)
+    scheduler.add_job(main, 'interval', minutes=5)
     scheduler.start()
     
 # #########################################################################    
-schedule()"""
+schedule()
     
 """ needs to be done 
-1 waiting time etween appearance on the screen
+1 waiting time between appearance on the screen*************************
 
 2 word selection
 
 3 randomisation
 
-4 counting and deletion after a number of appearance
+4 counting and deletion after a number of appearance-done**************
 
 5 voice on and off checkox
 
-6 change language between languages
+6 change language between languages*******************************
 
 7 process design from installation to uninstallation
 
