@@ -5,16 +5,48 @@ import datetime
 from openpyxl import load_workbook
 from apscheduler.schedulers.blocking import BlockingScheduler
 import pyttsx3 as vol
-import os
+import os,sys
 from unidecode import unidecode as udec
-#sanitarization
 def fixWord(word):
     # this section added sice pronounciation is not good for french words containing signs
     
     return udec(word)
+def placement(win):
+    win.update_idletasks()
+    width = win.winfo_width()
+    height = win.winfo_height()
+    win.geometry('{}x{}+{}+{}'.format(width,height, win.winfo_screenwidth()-width,win.winfo_screenheight()-height))          
 
-# volume related issues change hear later needs to eb worked on##############
-# make engine a class for better programming practice
+    
+def get_words():
+    global sheet
+    global repoSheet
+    global discardedWords
+    global wbook
+    global sheetList
+    wbook=load_workbook('./wordList.xlsx')
+
+    sheetList=wbook.get_sheet_names()
+    sheet=wbook.get_sheet_by_name(sheetList[0])
+    repoSheet=wbook.get_sheet_by_name(sheetList[1])
+    discardedWords=wbook.get_sheet_by_name(sheetList[2])
+
+    wordList={}
+    global size
+    size=721
+    random_start=random.randrange(1,size,1)
+    print(random_start)
+    for i in range(1,51):
+        iterator=random_start+i if random_start+i<=size else random_start+i+1-size
+        if sheet.cell(row=iterator,column=1).value!=None:
+            try:
+                wordList['{}'.format(sheet.cell(row=iterator,column=1).value)]=[sheet.cell(row=iterator,column=2).value,sheet.cell(row=iterator,column=3).value]
+            except Exception:pass
+        else:
+            break 
+    print(wordList)
+    update(wordList)
+    #return wordList  
 def pronounce_meaning(mean):
     engine1=vol.init()
     engine1.setProperty('rate',180)
@@ -38,12 +70,12 @@ def pronounce(word,mean):
     
     
     
-    # or stop() can be used improve this later
+
 # ###############################################################################    
 def update_excel(key,value):
     try:
         
-        for i in range(1,200):
+        for i in range(1,size):
             
             if sheet.cell(row=i,column=1).value==key:
                 
@@ -93,20 +125,21 @@ def discard_word(key,value):
         
        
 def update(wordlist):
-    global root
+    
     try:
         for key,value in wordlist.items():
-            if value[1]!=None and value[1]>99:
+            if value[1]!=None and value[1]>99:# there is a problem here gives error sometimes
                 discard_word(key,value)
             else:
-                var1.set(key)
-                var2.set(value[0])
+                french_word.set(key.strip())
+                english_word.set(value[0].strip())
                 value[1]=1 if value[1]==None else value[1]+1
+                root.update()
+               
                 update_excel(key, value)
-                mainwindow.update()
                 pronounce(key,value[0])
                 time.sleep(10)
-        root.destroy() 
+        
     except Exception as e:
         print(e)
         pass
@@ -114,118 +147,49 @@ def update(wordlist):
 # improve design ###############
 def wait():
     os.system("pause")
-def hidden():
-
-    """label1.width=0
-    label1.height=0
-    mainwindow.update()"""
-
-class App:
-    # make label and button a class####################
-    def __init__(self, master):
-        global mainwindow     
-        mainwindow = Frame(master)
-        global var1,var2
-        global label1
-        var1 = StringVar()
-        label1 = Label( master,compound=CENTER,width=21,border=0,height=2,font = "Helvetica 20 bold",
-                        bg="#FF9900",fg="#CC3333", textvariable=var1,
-                        relief=RAISED )
-        
-        
-        label1.pack()  
-        var2 = StringVar()
-        label2 = Label( master,anchor=CENTER,compound=CENTER,width=21,height=2,border=0,font = "Helvetica 20 bold",
-                        bg="#FF9900",fg="#CC3333", textvariable=var2,
-                        relief=RAISED )
-                
-        
-        label2.pack()  
-        """ self.stop = Button(master, 
-                             text="STOP",bg='#CC3333',border=0, fg="#FFCC00",width=8,
-                             command=lambda : mainwindow.destroy())
-        self.play = Button(master, 
-                                     text="PLAY",bg='#CC3333',border=0, fg="#FFCC00",width=8,
-                                     command=hidden)  
-        self.hide = Button(master, 
-                                             text="HIDE",bg='#CC3333',border=0, fg="#FFCC00",width=8,
-                                             command=hidden)  
-        self.hide.bind(hidden)
-        self.discard = Button(master, 
-                                             text="DISCARD",bg='#CC3333',border=0, fg="#FFCC00",width=8,
-                                             command=lambda : discard_word(
-                                                                          'a')    )
-        self.voice = Button(master, 
-                                                     text="VOICE",bg='#CC3333',border=0, fg="#FFCC00",width=8,
-                                                     command=quit)          
-        self.stop.pack(side=LEFT)
-        self.play.pack(side=LEFT)
-        self.hide.pack(side=LEFT)
-        self.discard.pack(side=LEFT)
-        self.voice.pack(side=LEFT)
-        self.slogan = Button(master,width=8,bg='#CC3333',border=0, fg="#FFCC00",
-                                 text="POSITION")
-        self.slogan.pack(side=LEFT) """    
-        mainwindow.pack(fill=BOTH, expand=YES)
-        
-    def getWords():
-        global sheet
-        global repoSheet
-        global discardedWords
-        global wbook
-        global sheetList
-        wbook=load_workbook('./wordList.xlsx')
-        
-        sheetList=wbook.get_sheet_names()
-        sheet=wbook.get_sheet_by_name(sheetList[0])
-        repoSheet=wbook.get_sheet_by_name(sheetList[1])
-        discardedWords=wbook.get_sheet_by_name(sheetList[2])
-            
-        wordList={}
-        random_start=random.randrange(1,51,1)
-        print(random_start)
-        for i in range(10):
-            iterator=random_start+i if random_start+i<=50 else random_start+i-50
-            if sheet.cell(row=iterator,column=1).value!=None:
-                try:
-                    wordList['{}'.format(sheet.cell(row=i,column=1).value)]=[sheet.cell(row=i,column=2).value,sheet.cell(row=i,column=3).value]
-                except Exception:pass
-            else:
-                break 
-        print(wordList)
-        return wordList               
-# ############################# #########################################   
-def placement(win):
-    win.update_idletasks()
-    width = win.winfo_width()
-    height = win.winfo_height()
-    win.geometry('{}x{}+{}+{}'.format(width,height, win.winfo_screenwidth()-width,win.winfo_screenheight()-height))          
-
-# ######################################################################
-# main code
+def go():
+    print('go')
+    sys.exit()
+    print('go')
 def main():
-    global root
-    root = Tk()
-    root.attributes('-alpha',0.5)
-    root.wm_attributes('-topmost','true')
-    #root.wm_attributes('-disabled','true') # when enabled no interaction with ui
+
+    PROGRAM_NAME='FRENCH WORD LEARNING'
+    root=Tk()
+    
     root.overrideredirect(True)
-    #root.title("Pack - Example 12")
-    display = App(root)
+    root.configure(background='#118977')
+    root.attributes('-alpha',0.8)
+    root.wm_attributes('-topmost','true')
+    root.title(PROGRAM_NAME)
+    global english_word
+    global french_word 
+    global root
+    french_word=StringVar()
+    english_word=StringVar()
+    french_word.set(" ")
+    english_word.set(" ")
+    root.resizable(width=False, height=False)
+    french=Label(fg='black',textvariable=french_word,relief=GROOVE,width=64,height=3).grid(row=0,padx=1,pady=1,column=0,columnspan=3)
+
+    english=Label(textvariable=english_word,relief=GROOVE,width=64,height=6).grid(row=1,padx=1,pady=1,column=0,columnspan=3)
+    b1=Button(text='Discard',relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=0,sticky='e')
+    b2=Button(text='Voice on/off',relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
+    exit_button=Button(text='Exit',command=go,relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=2,sticky='e')
     placement(root)
-    wordlist=App.getWords()
-    update(wordlist)
+    word_list=get_words()
     root.mainloop()
-#main()  
+    
+    
+main()  
 # schedule to appear on the bottom right of the screen   ###################
-def schedule():
+"""def schedule():
     scheduler = BlockingScheduler()
     scheduler.add_job(main, 'interval', minutes=5)
     scheduler.start()
     
 # #########################################################################    
-schedule()
-    
+schedule()"""
+        
 """ needs to be done 
 1 waiting time between appearance on the screen*************************
 
