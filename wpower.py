@@ -7,7 +7,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 import pyttsx3 as vol
 import os,sys
 from unidecode import unidecode as udec
-
+import threading
 global volume_value
 def fixWord(word):
     # this section added sice pronounciation is not good for french words containing signs
@@ -21,36 +21,42 @@ def placement(win):
 
     
 def get_words():
+    
     global sheet
     global repoSheet
     global discardedWords
     global wbook
     global sheetList
+    
     wbook=load_workbook('./wordList.xlsx')
-
-    sheetList=wbook.get_sheet_names()
-    sheet=wbook.get_sheet_by_name(sheetList[0])
-    repoSheet=wbook.get_sheet_by_name(sheetList[1])
-    discardedWords=wbook.get_sheet_by_name(sheetList[2])
-
-    wordList={}
-    global size
-    size=721
-    random_start=random.randrange(1,size,1)
-    print(random_start)
-    for i in range(1,51):
-        iterator=random_start+i if random_start+i<=size else random_start+i+1-size
-        if sheet.cell(row=iterator,column=1).value!=None:
-            try:
-                wordList['{}'.format(sheet.cell(row=iterator,column=1).value)]=[sheet.cell(row=iterator,column=2).value,sheet.cell(row=iterator,column=3).value]
-            except Exception:pass
-        else:
-            break 
-    print(wordList)
-    update(wordList)
+    try:
+        
+        
+        sheetList=wbook.get_sheet_names()
+        sheet=wbook.get_sheet_by_name(sheetList[0])
+        repoSheet=wbook.get_sheet_by_name(sheetList[1])
+        discardedWords=wbook.get_sheet_by_name(sheetList[2])
+        print(sheet.max_row)
+        wordList={}
+        global size
+        size=sheet.max_row
+        random_start=random.randrange(1,size,1)
+        #print(random_start)
+        for i in range(1,51):
+            iterator=random_start+i if random_start+i<=size else random_start+i+1-size
+            if sheet.cell(row=iterator,column=1).value!=None:
+                try:
+                    wordList['{}'.format(sheet.cell(row=iterator,column=1).value)]=[sheet.cell(row=iterator,column=2).value,sheet.cell(row=iterator,column=3).value]
+                except Exception:pass
+            else:
+                break 
+        #print(wordList)
+        update(wordList)
+    except UnicodeDecodeError:
+        get_words()
     #return wordList  
 def pronounce_meaning(mean):
-    print(volume_value.get())
+    #print(volume_value.get())
     engine1=vol.init()
     engine1.setProperty('rate',180)
     engine1.setProperty('volume',volume_value.get())
@@ -89,7 +95,7 @@ def update_excel(key,value):
                 wbook.save('./wordList.xlsx')
             else:pass
     except Exception as e:
-        print(e)
+        #print(e)
         pass
 def volume_on_off():
     if volume_value.get()!='0.0':
@@ -99,20 +105,22 @@ def volume_on_off():
         volume_value.set('0.7')
         volume_caption.set("Volume On")
 def user_discard(fr,eng):
-    print(fr,eng)
+    #print(fr,eng)
+    discard_word(fr,[eng,1])
     
 def discard_word(key,value):
+    
     val_list=[key,value[0],value[1]]
     try:
-        for i in range(1,200):
+        for i in range(1,size):
             
             if sheet.cell(row=i,column=1).value==key:
-                counter=200
+                counter=size
                 
                 while repoSheet.cell(row=counter,column=1).value==None:
                     # we should know if there is no value in the repo
                     if counter==1: 
-                        print("There is no value in Repo")
+                        #print("There is no value in Repo")
                         break
                     
                     counter=counter-1
@@ -126,7 +134,7 @@ def discard_word(key,value):
             
                     discardedWords['{}{}'.format(d,discard)]=val_list[columns.index(d)]
                     
-                for i in range(1,200):
+                for i in range(1,size):
                     if key==sheet.cell(row=i,column=1).value:
                         for k in columns:
                             cval=1+columns.index(k)
@@ -156,16 +164,15 @@ def update(wordlist):
                 time.sleep(10)
         
     except Exception as e:
-        print(e)
+        #print(e)
         pass
 # GUI interface needs to e improved ########################################
 # improve design ###############
 def wait():
     os.system("pause")
-def go():
-    print('go')
-    sys.exit()
-    print('go')
+def exit_from_application():
+    wbook.save('./wordList.xlsx') 
+    os._exit(1)
 def main():
 
     PROGRAM_NAME='FRENCH WORD LEARNING'
@@ -193,10 +200,10 @@ def main():
     
     english=Label(textvariable=english_word,relief=GROOVE,width=64,height=6).grid(row=1,padx=1,pady=1,column=0,columnspan=3)
     discard_button=Button(text='Discard',command=lambda : user_discard(french_word.get(),english_word.get()),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=0,sticky='e')
-    voice_button=Button(textvariable=volume_caption,command=volume_on_off,relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
-    exit_button=Button(text='Exit',command=go,relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=2,sticky='e')
+    voice_button=Button(textvariable=volume_caption,command=lambda :threading.Thread(target=volume_on_off).start(),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
+    exit_button=Button(text='Exit',command=lambda :threading.Thread(target=exit_from_application).start(),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=2,sticky='e')
     placement(root)
-    word_list=get_words()
+    w=threading.Thread(target=get_words).start()
     root.mainloop()
     
     
@@ -215,13 +222,13 @@ schedule()"""
 
 2 word selection
 
-3 randomisation
+3 randomisation DONE!!!!!!!!!!!!!!!!!!
 
-4 counting and deletion after a number of appearance-done**************
+4 counting and deletion after a number of appearance-done************** DONE!!!!!!!!!!!!!!!!!! 100 times
 
-5 voice on and off checkox
+5 voice on and off checkox DONE!!!!!!!!!!!!!!!!!!
 
-6 change language between languages*******************************
+6 change language between languages******************************* DONE!!!!!!!!!!!!!!!!!
 
 7 process design from installation to uninstallation
 
