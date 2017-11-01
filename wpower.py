@@ -7,6 +7,8 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 import pyttsx3 as vol
 import os,sys
 from unidecode import unidecode as udec
+
+global volume_value
 def fixWord(word):
     # this section added sice pronounciation is not good for french words containing signs
     
@@ -48,9 +50,10 @@ def get_words():
     update(wordList)
     #return wordList  
 def pronounce_meaning(mean):
+    print(volume_value.get())
     engine1=vol.init()
     engine1.setProperty('rate',180)
-    engine1.setProperty('volume',0.7)
+    engine1.setProperty('volume',volume_value.get())
     v=engine1.getProperty('voices')
     engine1.setProperty('voice',v[1].id)   
     engine1.say('means')
@@ -59,14 +62,16 @@ def pronounce_meaning(mean):
     engine1.runAndWait()
     engine1.stop()
 def pronounce(word,mean):
-    engine=vol.init()
-    engine.setProperty('rate',200)
-    engine.setProperty('volume',0.7)
-    engine.say(fixWord(word))
-    engine.runAndWait() 
-    engine.stop()
-    time.sleep(1)
-    pronounce_meaning(mean)
+    if volume_value.get()!='0.0':
+        engine=vol.init()
+        engine.setProperty('rate',200)
+        engine.setProperty('volume',volume_value.get())
+        engine.say(fixWord(word))
+        engine.runAndWait() 
+        engine.stop()
+        time.sleep(1)
+        pronounce_meaning(mean)
+    else:pass
     
     
     
@@ -86,6 +91,16 @@ def update_excel(key,value):
     except Exception as e:
         print(e)
         pass
+def volume_on_off():
+    if volume_value.get()!='0.0':
+        volume_value.set('0.0') 
+        volume_caption.set("Volume Off") 
+    else:
+        volume_value.set('0.7')
+        volume_caption.set("Volume On")
+def user_discard(fr,eng):
+    print(fr,eng)
+    
 def discard_word(key,value):
     val_list=[key,value[0],value[1]]
     try:
@@ -164,16 +179,21 @@ def main():
     global english_word
     global french_word 
     global root
+    global volume_value,volume_caption
+    volume_value=StringVar()
     french_word=StringVar()
     english_word=StringVar()
+    volume_caption=StringVar()
+    volume_value.set('0.7')
     french_word.set(" ")
     english_word.set(" ")
+    volume_caption.set("Volume On")
     root.resizable(width=False, height=False)
     french=Label(fg='black',textvariable=french_word,relief=GROOVE,width=64,height=3).grid(row=0,padx=1,pady=1,column=0,columnspan=3)
-
+    
     english=Label(textvariable=english_word,relief=GROOVE,width=64,height=6).grid(row=1,padx=1,pady=1,column=0,columnspan=3)
-    b1=Button(text='Discard',relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=0,sticky='e')
-    b2=Button(text='Voice on/off',relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
+    discard_button=Button(text='Discard',command=lambda : user_discard(french_word.get(),english_word.get()),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=0,sticky='e')
+    voice_button=Button(textvariable=volume_caption,command=volume_on_off,relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
     exit_button=Button(text='Exit',command=go,relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=2,sticky='e')
     placement(root)
     word_list=get_words()
