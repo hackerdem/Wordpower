@@ -12,14 +12,7 @@ import os,sys
 from unidecode import unidecode as udec
 import threading
 global volume_value
-def replace_data():
-    with open('data.txt','w+') as newfile:
-        pass
         
-        
-        
-def read_from_file():
-    pass
 def import_data_from_excel():
     #let people know about formatting for excel
     wbook=load_workbook('./wordList.xlsx')
@@ -79,8 +72,10 @@ def pronounce(item):
         time.sleep(5)
     
 def get_words():
+    global word_dictionary,selected_words,discard_words
     word_dictionary=[]
     selected_words=[]
+    discard_words=[]
     a=0
     global size
     try:
@@ -89,6 +84,7 @@ def get_words():
             import_data_from_excel()
     except Exception as e:
             print(e)            
+    
     try:
         with open('data.txt','r') as fl:
             read_file=fl.readlines()
@@ -96,7 +92,7 @@ def get_words():
             fl.close()
     except Exception as e:
         print(e)
-        
+       
     for line in read_file:
         try:
             matching_pattern_in_line=re.findall('[\w, \'-]+',fix_word(line))
@@ -109,23 +105,27 @@ def get_words():
     random_start=random.randrange(1,size,1)
     print(len(word_dictionary),random_start)
     for i in range(0,50):
-        iterator=random_start+i if random_start+i<size else random_start+i-1-size
+        iterator=random_start+i if random_start+i<size else random_start+i-size
         selected_words.append(word_dictionary[iterator])
-    update_list_and_interface(selected_words)
+    update_list_and_interface(selected_words,word_dictionary)
     
-def update_list_and_interface(selected_words):
+def update_list_and_interface(selected_words,word_dictionary):
     try:
         for item in selected_words:
             if item[2]!=None and int(item[2])>99:
-                discard_learnt_word(item)
+                discard_words.append(item)
             else:
                 french_word.set(item[0])
                 english_word.set(item[1])
                 item[2]='1' if item[2] in [None,0] else str(int(item[2])+1)
                 root.update()
                 
-                update_source_file(item)
+                #update_source_file(item,word_dictionary)
+                for i in word_dictionary:
+                    if i[0]==item[0]:
+                        i[2]=int(i[2])+int(item[2])                
                 pronounce(item)
+        exit_from_application()
     except Exception as error:
         print(error)
         
@@ -140,37 +140,29 @@ def volume_on_off():
         
 def user_discard(fr,eng):
     print(fr,eng)
-    discard_learnt_word([fr,eng])
+
+    for i in word_dictionary:
+        if i[0]==fr:
+            discard_words.append(i)
 def wait():
     os.system("pause")
 def exit_from_application():
-    
+    delete_from_source()
     os._exit(1)
     
-def discard_learnt_word(item):
+    
+def delete_from_source():
     
     try:
-        with open('data.txt','r+') as source_file:
-            read_source_file=source_file.readlines()
-            for i in read_source_file:
-                if re.search('{}'.format(item[0]),i):
-                    i.strip()
-            source_file.write('::{}::{}::0::0::\n'.format(item[0],item[1])) #user deletion and automatic deletion creates double record fix it
-            
+        with open('data.txt', 'w'): pass # empty data file before appending the list
+        with open('data.txt','a+') as write_source_file:
+            write_source_file.seek(0,0)
+            for i in word_dictionary:
+                if i not in discard_words:
+                    write_source_file.write('::{}::{}::{}::{}::\n'.format(i[0],i[1],i[2],i[3]))
+                
     except Exception as error:
-        print(error)
-def update_source_file(item):
-    
-    try:
-        with open('data.txt','r+') as w_file:
-            read_file=w_file.readlines()
-            for i in read_file:
-                if re.search('{}'.format(item[0]),i):
-                    i.strip()
-            w_file.write('::{}::{}::{}::1::\n'.format(item[0],item[1],int(item[2])+1))
-                    
-    except Exception as error:
-        print(error)
+        print(error)    
 def placement(win):
     win.update_idletasks()
     width = win.winfo_width()
