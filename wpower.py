@@ -53,8 +53,6 @@ def pronounce_meaning(mean):
     engine1.runAndWait()
     engine1.stop()
     
-
-
 def pronounce(item):
     word=item[0]
     mean=item[1]
@@ -78,6 +76,15 @@ def get_words():
     discard_words=[]
     a=0
     global size
+    def append_read_data(r_file,word_list):
+        for line in r_file:
+            try:
+                matching_pattern_in_line=re.findall('[\w, \'-]+',fix_word(line))
+                print(matching_pattern_in_line)
+                word_list.append(matching_pattern_in_line)
+            except:
+                pass 
+            #implement this later
     try:
         print(os.path.isfile("data.txt"),os.stat("data.txt").st_size)
         if os.path.isfile("data.txt")==False or os.stat("data.txt").st_size==0:#fix this later
@@ -92,16 +99,11 @@ def get_words():
             fl.close()
     except Exception as e:
         print(e)
-       
-    for line in read_file:
-        try:
-            matching_pattern_in_line=re.findall('[\w, \'-]+',fix_word(line))
-            print(matching_pattern_in_line)
-            word_dictionary.append(matching_pattern_in_line)
-        except:
-            pass
-        #implement this later
-
+    append_read_data(read_file,word_dictionary)   
+    with open('discarded_data.txt','r+') as discard_file:
+        read_discard_file=discard_file.readlines()
+        append_read_data(read_discard_file,discard_words)   
+                              
     random_start=random.randrange(1,size,1)
     print(len(word_dictionary),random_start)
     for i in range(0,50):
@@ -110,25 +112,28 @@ def get_words():
     update_list_and_interface(selected_words,word_dictionary)
     
 def update_list_and_interface(selected_words,word_dictionary):
-    try:
         for item in selected_words:
-            if item[2]!=None and int(item[2])>99:
-                discard_words.append(item)
-            else:
-                french_word.set(item[0])
-                english_word.set(item[1])
-                item[2]='1' if item[2] in [None,0] else str(int(item[2])+1)
-                root.update()
+            try:
+                if item[2]!=None and int(item[2])>99:
+                    discard_words.append(item)
+                else:
+                    french_word.set(item[0])
+                    english_word.set(item[1])
+                    item[2]='1' if item[2] in [None,0] else str(int(item[2])+1)
+                    root.update()
                 
-                #update_source_file(item,word_dictionary)
-                for i in word_dictionary:
-                    if i[0]==item[0]:
-                        i[2]=int(i[2])+int(item[2])                
-                pronounce(item)
+                    #update_source_file(item,word_dictionary)
+                    for i in word_dictionary:
+                        if i[0]==item[0]:
+                            i[2]=int(i[2])+int(item[2])                
+                    pronounce(item)
+            except Exception as error:
+                discard_words.append(item)
+                print(error)
+                pass
+            
         exit_from_application()
-    except Exception as error:
-        print(error)
-        
+    
 def volume_on_off():
   
     if volume_value.get()!='0.0':
@@ -156,11 +161,14 @@ def delete_from_source():
     try:
         with open('data.txt', 'w'): pass # empty data file before appending the list
         with open('data.txt','a+') as write_source_file:
-            write_source_file.seek(0,0)
+            write_source_file.seek(0,0)# delete this later
             for i in word_dictionary:
                 if i not in discard_words:
                     write_source_file.write('::{}::{}::{}::{}::\n'.format(i[0],i[1],i[2],i[3]))
-                
+                else:
+                    with open('discarded_data.txt','a+') as discard_file:
+                        discard_file.write('::{}::{}::{}::{}::\n'.format(i[0],i[1],i[2],i[3]))
+                        
     except Exception as error:
         print(error)    
 def placement(win):
@@ -172,16 +180,17 @@ def placement(win):
 def main():
     #w=threading.Thread(target=get_words).start()
     PROGRAM_NAME='FRENCH WORD LEARNING'
+    global root
     root=Tk()
     
-    root.overrideredirect(True)
+    #root.overrideredirect(True)
     root.configure(background='#118977')
     root.attributes('-alpha',0.8)
     root.wm_attributes('-topmost','true')
     root.title(PROGRAM_NAME)
     global english_word
     global french_word 
-    global root
+    
     global volume_value,volume_caption
     volume_value=StringVar()
     french_word=StringVar()

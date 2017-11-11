@@ -48,7 +48,7 @@
 ::quoi::whatexclamatory, interrogative, after preposition ::0::1::
 ::quitter::to leave, depart::0::1::
 ::raison::reason::0::1::
-::retourner::return::0::1::
+::retourner::return::1::1::
 ::offre::offer::0::1::
 ::chanson::song::0::1::
 ::envoie::send::0::1::
@@ -63,7 +63,7 @@
 ::attaque::attack::0::1::
 ::arrêté::stopped::0::1::
 ::change::exchange::0::1::
-::baiser::kiss::0::1::
+::baiser::kiss::4::1::
 ::pourtant::However::1::1::
 ::réponse::reply::0::1::
 ::connu::known::0::1::
@@ -93,20 +93,27 @@
 ::secours::help::0::1::
 ::aurez::will::0::1::
 ::conneries::bullshit::0::1::
-::visite::visit::2::1::
-::joué::play::2::1::
-::pourra::will::2::1::
-::imagine::conceived::2::1::
-::merveilleux::wonderful::2::1::
-::ecoutez::ecoutez::2::1::
-::volé::stolen::2::1::
-::lune::Moon::2::1::
-::bouche::stuffy::2::1::
-::sud::South::2::1::
-::ennuis::trouble::2::1::
-::but::goal::2::1::
-::hors::except::2::1::
-::sortie::exit::2::1::
+::visite::visit::0::1::
+::joué::play::0::1::
+::michael::michael::0::1::
+::pourra::will::0::1::
+::coucher::sleep::0::1::
+::imagine::conceived::0::1::
+::bob::bob::0::1::
+::merveilleux::wonderful::0::1::
+::continuer::Carry on::0::1::
+::ecoutez::ecoutez::0::1::
+::dirai::tell::0::1::
+::volé::stolen::0::1::
+::lune::Moon::0::1::
+::bouche::stuffy::1::1::
+::sud::South::0::1::
+::danse::dance::0::1::
+::ennuis::trouble::0::1::
+::but::goal::0::1::
+::aie::Ouch::0::1::
+::hors::except::0::1::
+::sortie::exit::0::1::
 ::boîte::box::0::1::
 ::vol::flight::0::1::
 ::public::public::0::1::
@@ -117,7 +124,7 @@
 ::époque::time::0::1::
 ::retourne::return::0::1::
 ::certain::certain::0::1::
-::bête::stupid::0::1::
+::bête::stupid::4::1::
 ::vendre::sale::0::1::
 ::avenir::to come up::0::1::
 ::grands::great::0::1::
@@ -152,10 +159,9 @@
 ::sécurité::safety, security::0::1::
 ::secret::secret secretive::0::1::
 ::seconde::second, moment::0::1::
-::scène::scene::0::1::
-::sauver::to save::languagedaily dot com::0::
-::sauter::to jump::0::1::
-::sauf::except::0::1::
+::scène::scene::2::1::
+::sauter::to jump::2::1::
+::sauf::except::2::1::
 ::sans::without::0::1::
 ::sang::blood::0::1::
 ::salut::greeting Hi, Hello, Bye::0::1::
@@ -177,11 +183,10 @@
 ::réveiller::to awake, wakesmbup::0::1::
 ::rêve::dream::0::1::
 ::réussir::to be successful, succeed::0::1::
-::retrouver::to find to meet::0::1::
-::retourner::to turn, turn over, return::0::1::
-::retour::return ::0::1::
-::retard::delay, lateness::0::1::
-::rester::to stay, remain::0::1::
+::retrouver::to find to meet::2::1::
+::retourner::to turn, turn over, return::2::1::
+::retour::return ::2::1::
+::retard::delay, lateness::2::1::
 ::reste::the remainder, rest::0::1::
 ::ressembler::to look like, to resemble::0::1::
 ::reprendre::to recapture, take back::0::1::
@@ -189,33 +194,28 @@
 ::réponse::response, answer, reply::0::1::
 ::répondre::to answer, reply::0::1::
 ::répéter::to repeat to go over, rehearse::0::1::
-::rentrer::to bring in, take in to get in, go in, come home::0::1::
-::rendre::to return, give back, repay::0::1::
-::rendez-vous::appointment::0::1::
-::rencontrer::to meet, encounter::0::1::
-::remettre::to put back hand over postpone put back on::0::1::
-::remercier::to thank::0::1::
-::rejoindre::to meet up to join, rejoin to go back to::0::1::
-::regarder::to look at, watch::0::1::
-::refuser::to refuse, turn down::0::1::
-::réfléchir::to reflect, think::0::1::
-::reconnaître::to recognize, acknowledge::0::1::
-::recevoir::to receive, to get::0::1::
-::rapport::report, connection, link, relationship::0::1::
-::rappeler::to remind, remember, call back, be reminiscent of::0::1::
-::ramener::to bring back , take back::0::1::
+::rentrer::to bring in, take in to get in, go in, come home::2::1::
+::rendre::to return, give back, repay::2::1::
+::rendez-vous::appointment::2::1::
+::rencontrer::to meet, encounter::2::1::
+::remettre::to put back hand over postpone put back on::2::1::
+::remercier::to thank::2::1::
+::rejoindre::to meet up to join, rejoin to go back to::2::1::
+::refuser::to refuse, turn down::2::1::
+::réfléchir::to reflect, think::2::1::
+::reconnaître::to recognize, acknowledge::6::1::
+::recevoir::to receive, to get::6::1::
+::rapport::report, connection, link, relationship::2::1::
+::rappeler::to remind, remember, call back, be reminiscent of::2::1::
+::ramener::to bring back , take back::2::1::
 ::premier::first, basic first floor::2::1::
 ::préférer::to prefer::2::1::
 ::pousser::to push, press::2::1::
 ::pourtant::yet::2::1::
-::pourquoi::why::2::1::
 ::poser::to put down, lay, pose, sit::2::1::
 ::porter::to carry, wear::2::1::
 ::porte::gate, door::2::1::
-::police::police::2::1::
-::point::dot, full stop, period::2::1::
 ::plutôt::rather, quite::2::1::
-::pleurer::verb::2::1::
 ::plein::full, solid::2::1::
 ::plan::map, plan, layout::2::1::
 ::plaisir::pleasure::2::1::
@@ -224,30 +224,29 @@
 ::pire::worse::2::1::
 ::pied::foot stem, leg, base::2::1::
 ::pièce::room play coin piece::2::1::
+::peut-être::perhaps, maybe::2::1::
 ::peur::fear, fright::2::1::
 ::peuple::people::2::1::
-::permettre::to allow, permit::2::1::
+::peu::not much, not very, few bit::2::1::
+::personne::anyone, anybody person, individual::2::1::
 ::perdre::to lose, miss::2::1::
 ::pendant::for, during::2::1::
 ::peine::sorrow, grief, saddness, suffering::2::1::
-::payer::to pay::2::1::
-::pauvre::poor poor person, beggar::2::1::
-::patron::boss, manager, owner::2::1::
-::passer::to pass, go by, cross::2::1::
-::passé::past, last the past, past tense::2::1::
-::partout::everywhere::2::1::
-::partir::to go, leave, go away::2::1::
-::partie::part game::2::1::
+::payer::to pay::0::1::
+::pauvre::poor poor person, beggar::0::1::
+::patron::boss, manager, owner::0::1::
+::passer::to pass, go by, cross::0::1::
+::passé::past, last the past, past tense::0::1::
+::partout::everywhere::0::1::
+::partir::to go, leave, go away::0::1::
+::partie::part game::0::1::
 ::part::part, share::2::1::
 ::parfois::sometimes::2::1::
-::parent::relative, relation parent::2::1::
 ::pareil::the same::2::1::
-::pardonner::to forgive, pardon, excuse::2::1::
-::parce que::because, for::0::1::
-::paraître::to come out, be published::0::1::
-::par::per, by, through, out of::0::1::
-::papier::paper::0::1::
-::papa::daddy, dad::0::1::
+::parce que::because, for::2::1::
+::paraître::to come out, be published::2::1::
+::par::per, by, through, out of::2::1::
+::papier::paper::2::1::
 ::paix::peace, calmness quiet, calm::0::1::
 ::ouvrir::to open::0::1::
 ::oui::yes::0::1::
@@ -318,12 +317,9 @@
 ::maître::master, ruler, mistress, school teacher::0::1::
 ::maison::house, home::0::1::
 ::maintenir::to keep, maintain::0::1::
-::maintenant::now, nowadays::0::1::
-::main::hand::0::1::
-::madame::madam, Mrs::0::1::
-::ma::myused before a feminine singular noun,::0::1::
-::l'un::a, an, onereplaces 'un' when 'un' is a pronoun or at the beginning of a sentence ::0::1::
-::lumière::light::0::1::
+::maintenant::now, nowadays::2::1::
+::main::hand::2::1::
+::lumière::light::2::1::
 ::lui::he, him, it, her::0::1::
 ::longtemps::long, for a long time::0::1::
 ::long::long, lengthy::0::1::
@@ -403,17 +399,17 @@
 ::garder::to keep, to look after, to guard::0::1::
 ::garde::guard carer, nurse::0::1::
 ::garçon::boy, chap, guy ::0::1::
-::gamin::kid, child ::2::1::
-::gagner::to win, earn::2::1::
-::fumer::to smoke::2::1::
-::froid::cold::2::1::
-::fric::doug, money, cash::2::1::
-::frère::brother::2::1::
-::frapper::to hit, strike, blow::2::1::
-::foutre:: slangto do, give, put onvulgarto have sex, to masturbate::2::1::
-::fou::mad, crazy madman, fool::2::1::
-::fort::strong, solid loud, much, most::2::1::
-::forme::form, shape::2::1::
+::gamin::kid, child ::0::1::
+::gagner::to win, earn::0::1::
+::fumer::to smoke::0::1::
+::froid::cold::0::1::
+::fric::doug, money, cash::0::1::
+::frère::brother::0::1::
+::frapper::to hit, strike, blow::0::1::
+::foutre:: slangto do, give, put onvulgarto have sex, to masturbate::0::1::
+::fou::mad, crazy madman, fool::0::1::
+::fort::strong, solid loud, much, most::0::1::
+::forme::form, shape::0::1::
 ::force::force, strength::0::1::
 ::fond::bottom, back::0::1::
 ::fois::time::0::1::
@@ -445,9 +441,14 @@
 ::exemple::example::0::1::
 ::excuser::to forgive, pardon, excuse::0::1::
 ::exactement::exactly, accurately, precisely::0::1::
-::état::state::2::1::
-::esprit::mind, brain, wit, spirit, esprit::2::1::
-::espèce::species, kind::2::1::
+::eux::them, they::0::1::
+::euh::Er::0::1::
+::état::state::0::1::
+::est-ce que::is it::0::1::
+::essayer::to try, try out, test::0::1::
+::esprit::mind, brain, wit, spirit, esprit::0::1::
+::espérer::to hope for::0::1::
+::espèce::species, kind::0::1::
 ::erreur::error, mistake::0::1::
 ::équipe::team, crew, party::0::1::
 ::épouser::to marry, to espouse::0::1::
@@ -536,10 +537,12 @@
 ::courant::current, trend::0::1::
 ::couper::to cut, cut off::0::1::
 ::coup::blow, shot, kick, punch::0::1::
+::coucher::to put to bed, lay down, to sleep::0::1::
 ::côté::coast, slope, side::0::1::
 ::corps::body::0::1::
 ::copain::friend, boyfriend::0::1::
 ::contre::against::0::1::
+::continuer::to continue, go on::0::1::
 ::content::happy, pleased, glad::0::1::
 ::connerie::stupidity::0::1::
 ::connaître::to know, experience::0::1::
@@ -592,78 +595,57 @@
 ::ceci::thisformal contexts refers to nouns that have no specific gender,::0::1::
 ::cause::cause, reason::0::1::
 ::casser::to break, shatter::0::1::
-::cas::case, instance::0::1::
-::carte::map, card ::0::1::
-::car::because, for::0::1::
-::capitaine::captain::0::1::
-::camp::camp::0::1::
-::calmer::to calm down, appease, sooth::0::1::
-::calme::peace, calmness quiet, calm::0::1::
-::café::coffee, cafébar ::0::1::
-::cadeau::present, gift::0::1::
-::cacher::to hide, conceal::0::1::
-::bureau::writing desk, studyroom , office::0::1::
-::brûler::to burn::0::1::
-::bruit::noise, sound rumour::0::1::
-::bras::arm::0::1::
-::bout::bit, tip, end::0::1::
-::boulot::work, job::0::1::
-::bouger::to move::0::1::
+::cas::case, instance::2::1::
+::carte::map, card ::2::1::
+::car::because, for::2::1::
+::capitaine::captain::2::1::
+::camp::camp::2::1::
+::calmer::to calm down, appease, sooth::2::1::
+::calme::peace, calmness quiet, calm::2::1::
+::cadeau::present, gift::2::1::
+::cacher::to hide, conceal::2::1::
+::bureau::writing desk, studyroom , office::2::1::
+::brûler::to burn::2::1::
+::bruit::noise, sound rumour::2::1::
+::bras::arm::2::1::
+::bout::bit, tip, end::2::1::
+::boulot::work, job::2::1::
+::bouger::to move::2::1::
 ::bouche::mouth::2::1::
-::bordel::brothel bloody::gooddamn mess::0::
-::bonsoir::good evening, good night::0::1::
-::bonjour::hello::0::1::
-::bon::good, right, kind good voucher then ::0::1::
-::bois::wood antlers::0::1::
-::boire::to drinkconsume alcohol , to soak up::0::1::
-::blesser::to injure, wound, hurt::0::1::
-::blanc::white blank::0::1::
-::bizarre::odd, starnge, bizarre::0::1::
-::bientôt::soon, quickly, shortly::0::1::
-::bête::stupid, silly::0::1::
-::besoin::need, demand, necessity::0::1::
-::bébé::baby::0::1::
-::beaucoup::much, many, a lot::0::1::
-::beau::beautiful, lovely, pretty fine, niceweather ::0::1::
-::battre::to beat::0::1::
-::bateau::boat, ship::0::1::
-::bas::low bottom::0::1::
-::balle::ballsports equipment ::0::1::
-::baiser::kiss to shag, screw, fuck::0::1::
-::avocat::lawyer::0::1::
-::avis::opinion notice::0::1::
-::avion::plane::0::1::
-::avec::with::0::1::
-::avant::before::0::1::
-::avancer::to move forward, advance::0::1::
-::aux:: àles of the::0::1::
-::autres::other::0::1::
-::autre::other, another, differentsingular ::0::1::
-::autant::so much, so many::0::1::
-::aussi::also, too::0::1::
-::aujourd'hui::today, nowadays::0::1::
-::aucune::no, not any, in no way::0::1::
-::aucun::no, not any none::0::1::
-::au::at the, to the, in thecontraction of àle used with a singular masculine noun ::0::1::
-::attraper::to catch::0::1::
-::attention::attention::0::1::
-::attendre::to wait for, expect::0::1::
-::attaquer::to attack::0::1::
-::assurer::to assure, insure::0::1::
-::assez::enough, quite, fairly::0::1::
-::asseoir::to sit down, sit up::0::1::
-::arriver::to arrive::0::1::
-::arrêter::to stop::0::1::
-::arranger::to arrange, to organize::0::1::
-::armée::army::0::1::
-::arme::weapon::0::1::
-::argent::silver, money::0::1::
-::après::after, afterwards, later::0::1::
-::approcher::to approach::0::1::
-::apprendre::to learn, to hearabout ::0::1::
-::apporter::to bring, supply::0::1::
-::appeler::to call, ring::0::1::
-::appel::call, appeal::0::1::
+::bonsoir::good evening, good night::2::1::
+::bois::wood antlers::6::1::
+::boire::to drinkconsume alcohol , to soak up::6::1::
+::blesser::to injure, wound, hurt::6::1::
+::blanc::white blank::6::1::
+::bientôt::soon, quickly, shortly::6::1::
+::bête::stupid, silly::6::1::
+::beau::beautiful, lovely, pretty fine, niceweather ::6::1::
+::battre::to beat::6::1::
+::bateau::boat, ship::6::1::
+::bas::low bottom::6::1::
+::balle::ballsports equipment ::6::1::
+::baiser::kiss to shag, screw, fuck::6::1::
+::avis::opinion notice::6::1::
+::avion::plane::6::1::
+::avancer::to move forward, advance::6::1::
+::autant::so much, so many::6::1::
+::aucune::no, not any, in no way::6::1::
+::aucun::no, not any none::6::1::
+::attraper::to catch::6::1::
+::attendre::to wait for, expect::6::1::
+::assurer::to assure, insure::6::1::
+::assez::enough, quite, fairly::2::1::
+::asseoir::to sit down, sit up::2::1::
+::arriver::to arrive::2::1::
+::arranger::to arrange, to organize::2::1::
+::armée::army::2::1::
+::arme::weapon::2::1::
+::argent::silver, money::2::1::
+::après::after, afterwards, later::2::1::
+::approcher::to approach::2::1::
+::apporter::to bring, supply::2::1::
+::appeler::to call, ring::2::1::
+::appel::call, appeal::2::1::
 ::année::year::0::1::
 ::an::year::0::1::
 ::amuser::to amuse, entertain::0::1::

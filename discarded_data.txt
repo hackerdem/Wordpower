@@ -1,1 +1,15 @@
 
+::madame::madam, Mrs::2::1::
+::ma::myused before a feminine singular noun,::2::1::
+::l'un::a, an, onereplaces 'un' when 'un' is a pronoun or at the beginning of a sentence ::2::1::
+::café::coffee, cafébar ::2::1::
+::bordel::brothel bloody::gooddamn mess::0::
+::bonjour::hello::2::1::
+::bon::good, right, kind good voucher then ::2::1::
+::bizarre::odd, starnge, bizarre::6::1::
+::besoin::need, demand, necessity::6::1::
+::bébé::baby::6::1::
+::beaucoup::much, many, a lot::6::1::
+::autre::other, another, differentsingular ::6::1::
+::attention::attention::6::1::
+::attaquer::to attack::6::1::
