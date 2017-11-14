@@ -175,3 +175,6 @@
 ::moins::less::6::1::
 ::moins::less::7::1::
 ::eh::hey::2::1::
+::chambre::bedroom, chamber::6::1::
+::noir::black black man::woman::0::
+::système::system::2::1::

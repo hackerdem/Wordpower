@@ -116,7 +116,7 @@ def update_list_and_interface(selected_words,word_dictionary):
     
         for item in selected_words:
             while pause_option.get()==1:
-                print('change this later u use computing resource for doing nothing')
+                p=1 #just for doing nothing
             try:
                 if item[2]!=None and int(item[2])>99:
                     discard_words.append(item)
@@ -220,12 +220,15 @@ def main():
     french=Label(fg='black',textvariable=french_word,relief=GROOVE,width=64,height=3).grid(row=0,padx=1,pady=1,column=0,columnspan=3)
     
     english=Label(textvariable=english_word,relief=GROOVE,width=64,height=6).grid(row=1,padx=1,pady=1,column=0,columnspan=3)
-    discard_button=Button(text='Discard',command=lambda : user_discard(french_word.get(),english_word.get()),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=0,sticky='e')
-    voice_button=Button(textvariable=volume_caption,command=lambda :threading.Thread(target=volume_on_off).start(),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
-    exit_button=Button(text='Exit',command=lambda :threading.Thread(target=exit_from_application).start(),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=2,sticky='e')
-    pause_button=Button(text='Pause',command=pause,relief=GROOVE,width=20,height=2).grid(row=3,padx=1,pady=1,column=0,sticky='e')
-    example_sentence=Label(text="example sentence",relief=GROOVE,width=64,height=3).grid(row=4,padx=1,pady=1,column=0,columnspan=3)
-    image_example=Label(text="picture",relief=GROOVE,width=64,height=16).grid(row=5,padx=1,pady=1,column=0,columnspan=6)
+    example_sentence=Label(text="example sentence",relief=GROOVE,width=64,height=3).grid(row=2,padx=1,pady=1,column=0,columnspan=3)
+    image_example=Label(text="picture",relief=GROOVE,width=64,height=16).grid(row=3,padx=1,pady=1,column=0,columnspan=6)    
+    
+    discard_button=Button(text='Discard',command=lambda : user_discard(french_word.get(),english_word.get()),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=0,sticky='e')
+    voice_button=Button(textvariable=volume_caption,command=lambda :threading.Thread(target=volume_on_off).start(),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=1,sticky='e')
+    exit_button=Button(text='Exit',command=lambda :threading.Thread(target=exit_from_application).start(),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=2,sticky='e')
+    pause_button=Button(text='Pause',command=pause,relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=0,sticky='e')
+    import_data_button=Button(text='Import Data',relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=1,sticky='e')
+    settings_button=Button(text='Settings',relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=2,sticky='e')
     placement(root)
     w=threading.Thread(target=get_words).start()
     root.mainloop()
