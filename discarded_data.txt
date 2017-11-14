@@ -13,3 +13,165 @@
 ::autre::other, another, differentsingular ::6::1::
 ::attention::attention::6::1::
 ::attaquer::to attack::6::1::
+::hé::Heyto attract attention ::2::1::
+::habiter::to live in::2::1::
+::guerre::war::2::1::
+::groupe::group::2::1::
+::grand::big, large, tall, great big boy, big girl::2::1::
+::garder::to keep, to look after, to guard::2::1::
+::garçon::boy, chap, guy ::2::1::
+::fumer::to smoke::2::1::
+::forme::form, shape::2::1::
+::finir::to finish, end::2::1::
+::fin::end, ending::2::1::
+::film::film, movie::2::1::
+::fermer::to close, shut::2::1::
+::fenêtre::window::languagedaily dot com::0::
+::déjà::already, before::2::1::
+::décider::to decide::2::1::
+::début::beginning::2::1::
+::danser::to dance::2::1::
+::connaître::to know, experience::2::1::
+::comprendre::to understand::2::1::
+::complètement::completely, fully, in depth::2::1::
+::comment::how what::2::1::
+::commencer::to start, begin::2::1::
+::comme::as, like how, same::2::1::
+::combien::how much, how many::2::1::
+::clé::key solutioin::2::1::
+::cinq::five::2::1::
+::exemple::example::1::1::
+::femme::woman, wife::6::1::
+::falloir::it is necessary, must, have to::2::1::
+::faim::hunger::2::1::
+::facile::easy::2::1::
+::exemple::example::2::1::
+::excuser::to forgive, pardon, excuse::2::1::
+::eux::them, they::2::1::
+::david::david::2::1::
+::combat::fight::2::1::
+::aurez::will::2::1::
+::visite::visit::2::1::
+::michael::michael::2::1::
+::pourra::will::2::1::
+::coucher::sleep::4::1::
+::bob::bob::2::1::
+::continuer::Carry on::4::1::
+::ecoutez::ecoutez::2::1::
+::dirai::tell::2::1::
+::coucher::to put to bed, lay down, to sleep::6::1::
+::continuer::to continue, go on::6::1::
+::chanson::song::2::1::
+::huit::eight::2::1::
+::radio::radio::2::1::
+::paul::paul::2::1::
+::ressemble::looks like::2::1::
+::arrêté::stopped::2::1::
+::réponse::reply::2::1::
+::connu::known::2::1::
+::lu::read::2::1::
+::réponse::response, answer, reply::2::1::
+::certain::certain::1::1::
+::cet::this, thatbefore vowel and mute h, ,::2::1::
+::ces::these, thoseplural form of masculine ::ce:: and feminine ::
+::certain::certain, sure::2::1::
+::carte::map, card ::6::1::
+::cacher::to hide, conceal::6::1::
+::normal::normal::2::1::
+::gouvernement::government::2::1::
+::situation::situation job location::2::1::
+::simple::simple::2::1::
+::signer::to sign::2::1::
+::si::yes if so, such::2::1::
+::seulement::only, solely::2::1::
+::seul::alone::2::1::
+::ses::his, her, itsplural ::2::1::
+::semaine::week::2::1::
+::seigneur::lorde Seigneurthe Lord ::2::1::
+::sécurité::safety, security::2::1::
+::secret::secret secretive::2::1::
+::normal::normal, usual::2::1::
+::manger::to eat::2::1::
+::problème::problem::2::1::
+::tête::head, face::2::1::
+::amour::love, love affair, cupid::2::1::
+::préparer::to prepare, make, get ready::2::1::
+::travailler::to work, work on, practise::2::1::
+::écouter::to listen to::2::1::
+::prince::prince::2::1::
+::écouter::listen::2::1::
+::manger::to eat::2::1::
+::écouter::to listen to::2::1::
+::amour::love, love affair, cupid::2::1::
+::entrer::to go in, enter, come in::1::1::
+::est-ce que::is it::2::1::
+::essayer::to try, try out, test::2::1::
+::espérer::to hope for::2::1::
+::erreur::error, mistake::2::1::
+::entrer::to go in, enter, come in::2::1::
+::entre::between, among::2::1::
+::ensemble::together, at once::2::1::
+::enfin::finally, at last::2::1::
+::amoureux::lover::1::1::
+::arriver::to arrive::6::1::
+::armée::army::6::1::
+::après::after, afterwards, later::6::1::
+::année::year::2::1::
+::an::year::2::1::
+::amoureux::loving::2::1::
+::ami::friend friendly::2::1::
+::allô::Hellotelephone ::2::1::
+::ouvrir::to open::2::1::
+::elles::theyrefers to a group of feminine nouns or females ::2::1::
+::lui::he, him, it, her::2::1::
+::plaisir::pleasure::6::1::
+::heure::hour time age::2::1::
+::livre::book pound::2::1::
+::écrire::to write::6::1::
+::répéter::to repeat to go over, rehearse::2::1::
+::marier::to marry, get married::2::1::
+::aimer::to love, like, be fond of::2::1::
+::aie::Ouch::2::1::
+::peut-être::perhaps, maybe::6::1::
+::etre::be::2::1::
+::prendre::to take, get::2::1::
+::heureux::happy, felicitous::2::1::
+::aider::to help, aid::2::1::
+::nos::ourplural ::languagedaily dot com::0::
+::présente::present::2::1::
+::sa::his, her, itsfeminine ::2::1::
+::intéresser::to interest::2::1::
+::demander::to ask, ask for, be looking for::2::1::
+::longtemps::long, for a long time::2::1::
+::différent::different, various, other::2::1::
+::désolé::contrite, desolate, afraid, sorry::14::1::
+::aide::assistant help, assistance::2::1::
+::président::president, chairman::2::1::
+::ni::nor, ornegative ::2::1::
+::parce que::because, for::6::1::
+::attaque::attack::6::1::
+::lieutenant::lieutenant::2::1::
+::mettre::to put, put on, wear languagedaily dot com::2::1::
+::approcher::to approach::14::1::
+::froid::cold::6::1::
+::cette::this, thatfeminine singular ::6::1::
+::santé::health::2::1::
+::maintenant::now, nowadays::14::1::
+::choisir::to choose::2::1::
+::blesser::to injure, wound, hurt::14::1::
+::boire::to drinkconsume alcohol , to soak up::14::1::
+::nouvelle::new, fresh::2::1::
+::chance::luck, fortune, chance::6::1::
+::numéro::number::2::1::
+::ici::here::2::1::
+::passer::to pass, go by, cross::2::1::
+::musique::music::2::1::
+::bravo::Bravo::2::1::
+::malade::ill, sick::2::1::
+::plan::map, plan, layout::6::1::
+::quitter::to leave, depart::14::1::
+::difficile::difficult, strenuous, hard::6::1::
+::près::near::6::1::
+::moins::less::6::1::
+::moins::less::7::1::
+::eh::hey::2::1::

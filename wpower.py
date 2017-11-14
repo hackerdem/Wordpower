@@ -11,7 +11,7 @@ import pyttsx3 as vol
 import os,sys
 from unidecode import unidecode as udec
 import threading
-global volume_value
+
         
 def import_data_from_excel():
     #let people know about formatting for excel
@@ -85,6 +85,7 @@ def get_words():
             except:
                 pass 
             #implement this later
+        word_list=random.shuffle(word_list)        
     try:
         print(os.path.isfile("data.txt"),os.stat("data.txt").st_size)
         if os.path.isfile("data.txt")==False or os.stat("data.txt").st_size==0:#fix this later
@@ -106,13 +107,16 @@ def get_words():
                               
     random_start=random.randrange(1,size,1)
     print(len(word_dictionary),random_start)
-    for i in range(0,50):
+    for i in range(0,25):
         iterator=random_start+i if random_start+i<size else random_start+i-size
         selected_words.append(word_dictionary[iterator])
     update_list_and_interface(selected_words,word_dictionary)
     
 def update_list_and_interface(selected_words,word_dictionary):
+    
         for item in selected_words:
+            while pause_option.get()==1:
+                print('change this later u use computing resource for doing nothing')
             try:
                 if item[2]!=None and int(item[2])>99:
                     discard_words.append(item)
@@ -149,8 +153,18 @@ def user_discard(fr,eng):
     for i in word_dictionary:
         if i[0]==fr:
             discard_words.append(i)
-def wait():
-    os.system("pause")
+"""def sleep_when_clicked():
+    while (pause_option.get()==1):
+        time.sleep(1)
+        
+    pause()"""
+def pause():
+    #os.system("pause")
+    #os.system("exec") implement resume in OS
+    if pause_option.get()==0:
+        pause_option.set(1)
+    else:
+        pause_option.set(0)
 def exit_from_application():
     delete_from_source()
     os._exit(1)
@@ -181,6 +195,10 @@ def main():
     #w=threading.Thread(target=get_words).start()
     PROGRAM_NAME='FRENCH WORD LEARNING'
     global root
+    global english_word
+    global french_word 
+    global volume_value,volume_caption    
+    global pause_option
     root=Tk()
     
     #root.overrideredirect(True)
@@ -188,14 +206,12 @@ def main():
     root.attributes('-alpha',0.8)
     root.wm_attributes('-topmost','true')
     root.title(PROGRAM_NAME)
-    global english_word
-    global french_word 
-    
-    global volume_value,volume_caption
+    pause_option=IntVar()
     volume_value=StringVar()
     french_word=StringVar()
     english_word=StringVar()
     volume_caption=StringVar()
+    pause_option.set(0)
     volume_value.set('0.7')
     french_word.set(" ")
     english_word.set(" ")
@@ -207,8 +223,9 @@ def main():
     discard_button=Button(text='Discard',command=lambda : user_discard(french_word.get(),english_word.get()),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=0,sticky='e')
     voice_button=Button(textvariable=volume_caption,command=lambda :threading.Thread(target=volume_on_off).start(),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=1,sticky='e')
     exit_button=Button(text='Exit',command=lambda :threading.Thread(target=exit_from_application).start(),relief=GROOVE,width=20,height=2).grid(row=2,padx=1,pady=1,column=2,sticky='e')
-    example_sentence=Label(text="example sentence",relief=GROOVE,width=64,height=3).grid(row=3,padx=1,pady=1,column=0,columnspan=3)
-    image_example=Label(text="picture",relief=GROOVE,width=64,height=16).grid(row=4,padx=1,pady=1,column=0,columnspan=6)
+    pause_button=Button(text='Pause',command=pause,relief=GROOVE,width=20,height=2).grid(row=3,padx=1,pady=1,column=0,sticky='e')
+    example_sentence=Label(text="example sentence",relief=GROOVE,width=64,height=3).grid(row=4,padx=1,pady=1,column=0,columnspan=3)
+    image_example=Label(text="picture",relief=GROOVE,width=64,height=16).grid(row=5,padx=1,pady=1,column=0,columnspan=6)
     placement(root)
     w=threading.Thread(target=get_words).start()
     root.mainloop()
