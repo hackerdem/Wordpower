@@ -11,21 +11,21 @@ import pyttsx3 as vol
 import os,sys
 from unidecode import unidecode as udec
 import threading
-
-        
+def write_imported_data_to_datatxt(source_excel_file):
+    sheet_list=source_excel_file.get_sheet_names()
+    word_sheet=source_excel_file.get_sheet_by_name(sheet_list[0])    
+    with open('data.txt','a+') as newfile:#look at number of files in folder user chooses the name of file do it later
+        for i in range(1,number_of_rows):
+            print(word_sheet.cell(row=i,column=1).value)
+            newfile.write('::{}::{}::0::1::\n'.format(word_sheet.cell(row=i,column=1).value,word_sheet.cell(row=i,column=2).value))
+        newfile.close()            
 def import_data_from_excel():
     #let people know about formatting for excel
-    wbook=load_workbook('./wordList.xlsx')
     try:
-        sheet_list=wbook.get_sheet_names()
-        word_sheet=wbook.get_sheet_by_name(sheet_list[0])
+        source_excel_file=load_workbook('./wordList.xlsx')
         number_of_rows=word_sheet.max_row
         print(number_of_rows)
-        with open('data.txt','w+') as newfile:#look at number of files in folder user chooses the name of file do it later
-            for i in range(1,number_of_rows):
-                print(word_sheet.cell(row=i,column=1).value)
-                newfile.write('::{}::{}::0::1::\n'.format(word_sheet.cell(row=i,column=1).value,word_sheet.cell(row=i,column=2).value))
-        newfile.close()        
+        write_imported_data_to_datatxt(source_excel_file)        
         # add how to save file        
     except Exception as error:
         print(error)
@@ -153,18 +153,15 @@ def user_discard(fr,eng):
     for i in word_dictionary:
         if i[0]==fr:
             discard_words.append(i)
-"""def sleep_when_clicked():
-    while (pause_option.get()==1):
-        time.sleep(1)
-        
-    pause()"""
 def pause():
     #os.system("pause")
     #os.system("exec") implement resume in OS
     if pause_option.get()==0:
         pause_option.set(1)
+        pause_caption.set('Resume')
     else:
         pause_option.set(0)
+        pause_caption.set('Pause')
 def exit_from_application():
     delete_from_source()
     os._exit(1)
@@ -198,7 +195,7 @@ def main():
     global english_word
     global french_word 
     global volume_value,volume_caption    
-    global pause_option
+    global pause_option,pause_caption
     root=Tk()
     
     #root.overrideredirect(True)
@@ -211,11 +208,13 @@ def main():
     french_word=StringVar()
     english_word=StringVar()
     volume_caption=StringVar()
+    pause_caption=StringVar()
     pause_option.set(0)
     volume_value.set('0.7')
     french_word.set(" ")
     english_word.set(" ")
     volume_caption.set("Volume On")
+    pause_caption.set("Pause")
     root.resizable(width=False, height=False)
     french=Label(fg='black',textvariable=french_word,relief=GROOVE,width=64,height=3).grid(row=0,padx=1,pady=1,column=0,columnspan=3)
     
@@ -226,7 +225,7 @@ def main():
     discard_button=Button(text='Discard',command=lambda : user_discard(french_word.get(),english_word.get()),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=0,sticky='e')
     voice_button=Button(textvariable=volume_caption,command=lambda :threading.Thread(target=volume_on_off).start(),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=1,sticky='e')
     exit_button=Button(text='Exit',command=lambda :threading.Thread(target=exit_from_application).start(),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=2,sticky='e')
-    pause_button=Button(text='Pause',command=pause,relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=0,sticky='e')
+    pause_button=Button(textvariable=pause_caption,command=pause,relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=0,sticky='e')
     import_data_button=Button(text='Import Data',relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=1,sticky='e')
     settings_button=Button(text='Settings',relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=2,sticky='e')
     placement(root)

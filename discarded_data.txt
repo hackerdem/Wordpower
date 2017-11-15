@@ -178,3 +178,15 @@
 ::chambre::bedroom, chamber::6::1::
 ::noir::black black man::woman::0::
 ::système::system::2::1::
+::ou::or either:: or::0::
+::là::there, here, then::2::1::
+::notre::oursingular ::2::1::
+::jour::day, daytime::2::1::
+::devoir::to have to, must duty, test::2::1::
+::eau::water::6::1::
+::rendez-vous::appointment::6::1::
+::chez::at, to, in::2::1::
+::protéger::to protect::2::1::
+::million::million::6::1::
+::homme::man::6::1::
+::euh::Er::14::1::
