@@ -190,3 +190,12 @@
 ::million::million::6::1::
 ::homme::man::6::1::
 ::euh::Er::14::1::
+::oublier::to forget, miss::2::1::
+::répondre::to answer, reply::2::1::
+::dangereux::dangerous::6::1::
+::leur::their, to themmas or fem , theirsmasc, fem, plural ::2::1::
+::depuis::since, from, for:: ::0::
+::dollar::dollar::2::1::
+::chanter::to sing::14::1::
+::ah::ah::2::1::
+::s'::himself, herself, themselvesvariation of ::se:: used before a word starting with a vowel or mute h ::

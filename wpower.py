@@ -1,7 +1,7 @@
 
 import re
 from tkinter import *
-from tkinter import filedialog
+from tkinter.filedialog import askopenfile
 import time
 import random
 import datetime
@@ -11,20 +11,29 @@ import pyttsx3 as vol
 import os,sys
 from unidecode import unidecode as udec
 import threading
+
+def ask_to_choose_import_file():
+    filename = askopenfile()    
+    new_data_source=filename.name
+    print(new_data_source)    
+    import_data_from_excel(new_data_source)
+
 def write_imported_data_to_datatxt(source_excel_file):
     sheet_list=source_excel_file.get_sheet_names()
-    word_sheet=source_excel_file.get_sheet_by_name(sheet_list[0])    
+    word_sheet=source_excel_file.get_sheet_by_name(sheet_list[0])  
+    number_of_rows=word_sheet.max_row
+    print(number_of_rows)    
     with open('data.txt','a+') as newfile:#look at number of files in folder user chooses the name of file do it later
+        newfile.seek(0,0)
         for i in range(1,number_of_rows):
             print(word_sheet.cell(row=i,column=1).value)
             newfile.write('::{}::{}::0::1::\n'.format(word_sheet.cell(row=i,column=1).value,word_sheet.cell(row=i,column=2).value))
         newfile.close()            
-def import_data_from_excel():
+def import_data_from_excel(source):
     #let people know about formatting for excel
     try:
-        source_excel_file=load_workbook('./wordList.xlsx')
-        number_of_rows=word_sheet.max_row
-        print(number_of_rows)
+        source_excel_file=load_workbook(source)
+        print(source)
         write_imported_data_to_datatxt(source_excel_file)        
         # add how to save file        
     except Exception as error:
@@ -89,7 +98,7 @@ def get_words():
     try:
         print(os.path.isfile("data.txt"),os.stat("data.txt").st_size)
         if os.path.isfile("data.txt")==False or os.stat("data.txt").st_size==0:#fix this later
-            import_data_from_excel()
+            import_data_from_excel(default_source_file)
     except Exception as e:
             print(e)            
     
@@ -196,8 +205,9 @@ def main():
     global french_word 
     global volume_value,volume_caption    
     global pause_option,pause_caption
+    global default_source_file
     root=Tk()
-    
+    default_source_file='./wordList.xlsx'
     #root.overrideredirect(True)
     root.configure(background='#118977')
     root.attributes('-alpha',0.8)
@@ -226,7 +236,7 @@ def main():
     voice_button=Button(textvariable=volume_caption,command=lambda :threading.Thread(target=volume_on_off).start(),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=1,sticky='e')
     exit_button=Button(text='Exit',command=lambda :threading.Thread(target=exit_from_application).start(),relief=GROOVE,width=20,height=2).grid(row=4,padx=1,pady=1,column=2,sticky='e')
     pause_button=Button(textvariable=pause_caption,command=pause,relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=0,sticky='e')
-    import_data_button=Button(text='Import Data',relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=1,sticky='e')
+    import_data_button=Button(text='Import Data',command=lambda :threading.Thread(target=ask_to_choose_import_file).start(),relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=1,sticky='e')
     settings_button=Button(text='Settings',relief=GROOVE,width=20,height=2).grid(row=5,padx=1,pady=1,column=2,sticky='e')
     placement(root)
     w=threading.Thread(target=get_words).start()
