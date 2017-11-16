@@ -27,7 +27,12 @@ def write_imported_data_to_datatxt(source_excel_file):
         newfile.seek(0,0)
         for i in range(1,number_of_rows):
             print(word_sheet.cell(row=i,column=1).value)
-            newfile.write('::{}::{}::0::1::\n'.format(word_sheet.cell(row=i,column=1).value,word_sheet.cell(row=i,column=2).value))
+            try:
+                if len(word_dictionary)!=0:
+                    word_dictionary.append([word_sheet.cell(row=i,column=1).value,word_sheet.cell(row=i,column=2).value,'0','1'])
+                else:
+                    newfile.write('::{}::{}::0::1::\n'.format(word_sheet.cell(row=i,column=1).value,word_sheet.cell(row=i,column=2).value))
+            except:pass
         newfile.close()            
 def import_data_from_excel(source):
     #let people know about formatting for excel
@@ -77,7 +82,16 @@ def pronounce(item):
         pronounce_meaning(mean)
     else:
         time.sleep(5)
-    
+def append_read_data(r_file,word_list):
+    for line in r_file:
+        try:
+            matching_pattern_in_line=re.findall('[\w, \'-]+',fix_word(line))
+            print(matching_pattern_in_line)
+            word_list.append(matching_pattern_in_line)
+        except:
+            pass 
+        #implement this later
+    word_list=random.shuffle(word_list)    
 def get_words():
     global word_dictionary,selected_words,discard_words
     word_dictionary=[]
@@ -85,16 +99,7 @@ def get_words():
     discard_words=[]
     a=0
     global size
-    def append_read_data(r_file,word_list):
-        for line in r_file:
-            try:
-                matching_pattern_in_line=re.findall('[\w, \'-]+',fix_word(line))
-                print(matching_pattern_in_line)
-                word_list.append(matching_pattern_in_line)
-            except:
-                pass 
-            #implement this later
-        word_list=random.shuffle(word_list)        
+            
     try:
         print(os.path.isfile("data.txt"),os.stat("data.txt").st_size)
         if os.path.isfile("data.txt")==False or os.stat("data.txt").st_size==0:#fix this later

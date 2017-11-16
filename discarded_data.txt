@@ -199,3 +199,14 @@
 ::chanter::to sing::14::1::
 ::ah::ah::2::1::
 ::s'::himself, herself, themselvesvariation of ::se:: used before a word starting with a vowel or mute h ::
+::ok::OK okaysatisfactory ::2::1::
+::dès::from::2::1::
+::rien::nothing::2::1::
+::ciel::sky::2::1::
+::libre::free, vacant::2::1::
+::sans::without::6::1::
+::rue::street::6::1::
+::non::no::2::1::
+::nuit::night::2::1::
+::nuit::night::2::1::
+::non::no::2::1::
