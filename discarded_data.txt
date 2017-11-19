@@ -210,3 +210,1065 @@
 ::nuit::night::2::1::
 ::nuit::night::2::1::
 ::non::no::2::1::
+::sais::know::1::1::
+::changer::change::3::1::
+::comment::how::1::1::
+::quand::when::1::1::
+::à::at::1::1::
+::on::we::1::1::
+::bureau::writing desk, studyroom , office::63::1::
+::partir::go::1::1::
+::à::at::2::1::
+::plan::plan::2::1::
+::changer::to change, exchange::6::1::
+::comment::how::2::1::
+::dix::ten, tenth::2::1::
+::avait::had::2::1::
+::quand::when::2::1::
+::rester::stay::2::1::
+::sais::know::2::1::
+::on::we::2::1::
+::bureau::office::2::1::
+::raison::reason::102::1::
+::partir::to go, leave, go away::2::1::
+::quand::when, whenever::2::1::
+::votre::your::1::1::
+::il::he::1::1::
+::mais::but::1::1::
+::mais::but::2::1::
+::poser::to pose::170::1::
+::seul::alone::2::1::
+::il::he::2::1::
+::près::near::2::1::
+::toute::all::2::1::
+::possible::possible::2::1::
+::votre::your::2::1::
+::docteur::doctor::3::1::
+::tout::all::2::1::
+::toutes::all::2::1::
+::vrai::True::2::1::
+::ton::your::6::1::
+::docteur::doctor, physician::6::1::
+::ils::they::1::1::
+::écrit::written::2::1::
+::ensemble::together::2::1::
+::enfant::child, infant::14::1::
+::après::after::2::1::
+::grande::great::2::1::
+::enfant::child::14::1::
+::tout::all::2::1::
+::ton::your::8::1::
+::les::the::1::1::
+::les::the::2::1::
+::sa::her::2::1::
+::faire::make::1::1::
+::nouveau::new, fresh::4::1::
+::m::m::2::1::
+::belle::beautiful::2::1::
+::faire::make::2::1::
+::de::of::2::1::
+::nouveau::new, fresh::6::1::
+::nouveau::new::4::1::
+::de::of::2::1::
+::ai::have::1::1::
+::sur::sure::1::1::
+::important::important::3::1::
+::a::at::1::1::
+::important::important, considerable, sizeable::6::1::
+::amis::friends::2::1::
+::ai::have::2::1::
+::là::the::2::1::
+::sur::sure::2::1::
+::son::his::2::1::
+::parti::left::2::1::
+::combien::how much::2::1::
+::le::the::2::1::
+::a::at::2::1::
+::ii::ii::2::1::
+::là::the::2::1::
+::le::the::2::1::
+::son::his::2::1::
+::deux::two::1::1::
+::un::a::1::1::
+::maintenant::now::2::1::
+::coup::blow, shot, kick, punch::160::1::
+::sérieux::genuine, serious::62::1::
+::un::a::2::1::
+::film::movie::2::1::
+::deux::two::2::1::
+::prenez::take::2::1::
+::homme::man::0::1::
+::passer::to pass, go by, cross::0::1::
+::film::film, movie::0::1::
+::moins::less::0::1::
+::leur::their, to themmas or fem , theirsmasc, fem, plural ::0::1::
+::beaucoup::much, many, a lot::0::1::
+::gouvernement::government::0::1::
+::quitter::to leave, depart::0::1::
+::froid::cold::0::1::
+::docteur::doctor, physician::0::1::
+::difficile::difficult, strenuous, hard::0::1::
+::fin::end, ending::0::1::
+::sérieux::genuine, serious::0::1::
+::blesser::to injure, wound, hurt::0::1::
+::rien::nothing::0::1::
+::prendre::to take, get::0::1::
+::seul::alone::0::1::
+::eh::hey::0::1::
+::madame::madam, Mrs::0::1::
+::groupe::group::0::1::
+::changer::to change, exchange::0::1::
+::pourra::will::0::1::
+::attaque::attack::0::1::
+::attaquer::to attack::0::1::
+::erreur::error, mistake::0::1::
+::libre::free, vacant::0::1::
+::lui::he, him, it, her::0::1::
+::répéter::to repeat to go over, rehearse::0::1::
+::bizarre::odd, starnge, bizarre::0::1::
+::manger::to eat::0::1::
+::an::year::0::1::
+::ciel::sky::0::1::
+::noir::black black man::woman::0::
+::sécurité::safety, security::0::1::
+::entre::between, among::0::1::
+::connaître::to know, experience::0::1::
+::radio::radio::0::1::
+::santé::health::0::1::
+::près::near::0::1::
+::facile::easy::0::1::
+::plaisir::pleasure::0::1::
+::ouvrir::to open::0::1::
+::espérer::to hope for::0::1::
+::hé::Heyto attract attention ::0::1::
+::partir::to go, leave, go away::0::1::
+::elles::theyrefers to a group of feminine nouns or females ::0::1::
+::guerre::war::0::1::
+::grand::big, large, tall, great big boy, big girl::0::1::
+::bébé::baby::0::1::
+::arrêté::stopped::0::1::
+::plan::map, plan, layout::0::1::
+::habiter::to live in::0::1::
+::dollar::dollar::0::1::
+::aide::assistant help, assistance::0::1::
+::nouveau::new, fresh::0::1::
+::ses::his, her, itsplural ::0::1::
+::simple::simple::0::1::
+::système::system::0::1::
+::sa::his, her, itsfeminine ::0::1::
+::heure::hour time age::0::1::
+::bordel::brothel bloody::gooddamn mess::0::
+::normal::normal, usual::0::1::
+::chambre::bedroom, chamber::0::1::
+::complètement::completely, fully, in depth::0::1::
+::comme::as, like how, same::0::1::
+::marier::to marry, get married::0::1::
+::début::beginning::0::1::
+::intéresser::to interest::0::1::
+::chanter::to sing::0::1::
+::commencer::to start, begin::0::1::
+::chez::at, to, in::0::1::
+::travailler::to work, work on, practise::0::1::
+::heureux::happy, felicitous::0::1::
+::coucher::to put to bed, lay down, to sleep::0::1::
+::enfant::child, infant::0::1::
+::coup::blow, shot, kick, punch::0::1::
+::année::year::0::1::
+::carte::map, card ::0::1::
+::aimer::to love, like, be fond of::0::1::
+::essayer::to try, try out, test::0::1::
+::armée::army::0::1::
+::combat::fight::0::1::
+::combien::how much, how many::0::1::
+::ici::here::0::1::
+::bonjour::hello::0::1::
+::décider::to decide::0::1::
+::ni::nor, ornegative ::0::1::
+::raison::reason::0::1::
+::approcher::to approach::0::1::
+::notre::oursingular ::0::1::
+::faim::hunger::0::1::
+::certain::certain, sure::0::1::
+::forme::form, shape::0::1::
+::comprendre::to understand::0::1::
+::dix::ten, tenth::0::1::
+::boire::to drinkconsume alcohol , to soak up::0::1::
+::deux::two::0::1::
+::nos::ourplural ::languagedaily dot com::0::
+::depuis::since, from, for:: ::0::
+::semaine::week::0::1::
+::écrire::to write::0::1::
+::prince::prince::0::1::
+::important::important, considerable, sizeable::0::1::
+::ami::friend friendly::0::1::
+::bravo::Bravo::0::1::
+::écouter::to listen to::0::1::
+::après::after, afterwards, later::0::1::
+::paul::paul::0::1::
+::garçon::boy, chap, guy ::0::1::
+::demander::to ask, ask for, be looking for::0::1::
+::peut-être::perhaps, maybe::0::1::
+::nouvelle::new, fresh::0::1::
+::attention::attention::0::1::
+::eau::water::0::1::
+::fermer::to close, shut::0::1::
+::etre::be::0::1::
+::musique::music::0::1::
+::maintenant::now, nowadays::0::1::
+::ecoutez::ecoutez::0::1::
+::protéger::to protect::0::1::
+::café::coffee, cafébar ::0::1::
+::ou::or either:: or::0::
+::finir::to finish, end::0::1::
+::lu::read::0::1::
+::est-ce que::is it::0::1::
+::ah::ah::0::1::
+::entrer::to go in, enter, come in::0::1::
+::problème::problem::0::1::
+::ces::these, thoseplural form of masculine ::ce:: and feminine ::
+::allô::Hellotelephone ::0::1::
+::situation::situation job location::0::1::
+::eux::them, they::0::1::
+::si::yes if so, such::0::1::
+::fumer::to smoke::0::1::
+::désolé::contrite, desolate, afraid, sorry::0::1::
+::bureau::writing desk, studyroom , office::0::1::
+::répondre::to answer, reply::0::1::
+::longtemps::long, for a long time::0::1::
+::mettre::to put, put on, wear languagedaily dot com::0::1::
+::seigneur::lorde Seigneur  the Lord ::0::1::
+::signer::to sign::0::1::
+::possible::possbile::0::1::
+::tête::head, face::0::1::
+::là::there, here, then::0::1::
+::bon::good, right, kind good voucher then ::0::1::
+::clé::key solutioin::0::1::
+::sans::without::0::1::
+::parce que::because, for::0::1::
+::michael::michael::0::1::
+::million::million::0::1::
+::danser::to dance::0::1::
+::l'un::a, an, onereplaces 'un' when 'un' is a pronoun or at the beginning of a sentence ::0::1::
+::réponse::response, answer, reply::0::1::
+::david::david::0::1::
+::livre::book pound::0::1::
+::président::president, chairman::0::1::
+::numéro::number::0::1::
+::aurez::will::0::1::
+::oublier::to forget, miss::0::1::
+::malade::ill, sick::0::1::
+::aie::Ouch::0::1::
+::connu::known::0::1::
+::cinq::five::0::1::
+::déjà::already, before::0::1::
+::comment::how what::0::1::
+::rendez-vous::appointment::0::1::
+::différent::different, various, other::0::1::
+::dangereux::dangerous::0::1::
+::exemple::example::0::1::
+::euh::Er::0::1::
+::enfin::finally, at last::0::1::
+::rue::street::0::1::
+::garder::to keep, to look after, to guard::0::1::
+::nuit::night::0::1::
+::chanson::song::0::1::
+::dirai::tell::0::1::
+::arriver::to arrive::0::1::
+::dès::from::0::1::
+::besoin::need, demand, necessity::0::1::
+::aider::to help, aid::0::1::
+::ils::theyrefers to a group of masculine or mixed masculine::feminine nouns ::0::
+::falloir::it is necessary, must, have to::0::1::
+::excuser::to forgive, pardon, excuse::0::1::
+::huit::eight::0::1::
+::secret::secret secretive::0::1::
+::ok::OK okaysatisfactory ::0::1::
+::présente::present::0::1::
+::visite::visit::0::1::
+::continuer::to continue, go on::0::1::
+::devoir::to have to, must duty, test::0::1::
+::chance::luck, fortune, chance::0::1::
+::choisir::to choose::0::1::
+::cet::this, thatbefore vowel and mute h, ,::0::1::
+::préparer::to prepare, make, get ready::0::1::
+::ma::myused before a feminine singular noun,::0::1::
+::seulement::only, solely::0::1::
+::quand::when, whenever::0::1::
+::autre::other, another, differentsingular ::2::1::
+::bob::bob::2::1::
+::cacher::to hide, conceal::0::1::
+::rester::to stay, remain::0::1::
+::femme::woman, wife::0::1::
+::cette::this, thatfeminine singular ::0::1::
+::ensemble::together, at once::0::1::
+::s'::himself, herself, themselvesvariation of ::se:: used before a word starting with a vowel or mute h ::
+::poser::to put down, lay, pose, sit::0::1::
+::ressemble::looks like::0::1::
+::amour::love, love affair, cupid::0::1::
+::amoureux::loving::0::1::
+::lieutenant::lieutenant::0::1::
+::jour::day, daytime::0::1::
+::fenêtre::window::languagedaily dot com::0::
+::armée::army::0::1::
+::sans::without::0::1::
+::libre::free::0::1::
+::fumer::smoke::0::1::
+::plaisir::pleasure::0::1::
+::garçon::boy::0::1::
+::erreur::error::0::1::
+::désolé::sorry::0::1::
+::moins::less::0::1::
+::santé::health::0::1::
+::près::near::0::1::
+::heure::hour::0::1::
+::ses::his::0::1::
+::nouvelle::new::0::1::
+::aide::help::0::1::
+::amoureux::lover::0::1::
+::cette::this::0::1::
+::quitter::to leave::0::1::
+::choisir::to choose::0::1::
+::eh::eh::0::1::
+::chanson::song::0::1::
+::café::coffee::0::1::
+::belle::beautiful::0::1::
+::prendre::take::0::1::
+::leur::their::0::1::
+::certain::certain::0::1::
+::ils::they::0::1::
+::sécurité::security::0::1::
+::ami::friend::0::1::
+::dangereux::dangerous::0::1::
+::un::a::0::1::
+::dès::from::0::1::
+::carte::map::0::1::
+::marier::marry::0::1::
+::lu::read::0::1::
+::besoin::need::0::1::
+::seul::alone::0::1::
+::situation::situation::0::1::
+::ecoutez::ecoutez::0::1::
+::paul::paul::0::1::
+::livre::book::0::1::
+::raison::reason::0::1::
+::michael::michael::0::1::
+::essayer::try::0::1::
+::écrit::written::0::1::
+::film::movie::0::1::
+::hé::Hey::0::1::
+::parti::left::0::1::
+::lieutenant::lieutenant::0::1::
+::fin::end::0::1::
+::nos::our::0::1::
+::elles::they::0::1::
+::m::m::0::1::
+::enfant::child::0::1::
+::depuis::since::0::1::
+::mettre::to put::0::1::
+::facile::easy::0::1::
+::bonjour::Hello::0::1::
+::important::important::0::1::
+::plan::plan::0::1::
+::guerre::war::0::1::
+::bébé::baby::0::1::
+::normal::normal::0::1::
+::entrer::enter::0::1::
+::si::if::0::1::
+::forme::form::0::1::
+::eau::water::0::1::
+::a::at::0::1::
+::clé::key::0::1::
+::chance::luck::0::1::
+::partir::go::0::1::
+::faim::hunger::0::1::
+::président::President::0::1::
+::rue::street::0::1::
+::ressemble::looks like::0::1::
+::combat::fight::0::1::
+::amis::friends::0::1::
+::ii::ii::0::1::
+::prenez::take::0::1::
+::ouvrir::open::0::1::
+::complètement::completely::0::1::
+::quand::when::0::1::
+::cet::this::0::1::
+::huit::eight::0::1::
+::passer::pass::0::1::
+::beaucoup::a lot::0::1::
+::chez::in::0::1::
+::dix::ten::0::1::
+::faire::make::0::1::
+::deux::two::0::1::
+::lui::him::0::1::
+::excuser::excuse::0::1::
+::manger::eat::0::1::
+::ciel::sky::0::1::
+::sérieux::serious::0::1::
+::aider::help::0::1::
+::déjà::already::0::1::
+::grand::great::0::1::
+::docteur::doctor::0::1::
+::finir::finish::0::1::
+::chambre::bedroom::0::1::
+::ni::or::0::1::
+::rien::nothing::0::1::
+::préparer::to prepare::0::1::
+::il::he::0::1::
+::après::after::0::1::
+::à::at::0::1::
+::sais::know::0::1::
+::bob::bob::0::1::
+::ici::right here::0::1::
+::etre::be::0::1::
+::dirai::tell::0::1::
+::attaque::attack::0::1::
+::falloir::have to::0::1::
+::aimer::like::0::1::
+::devoir::duty::0::1::
+::garder::keep::0::1::
+::amour::love::0::1::
+::notre::our::0::1::
+::entre::enter::0::1::
+::son::his::0::1::
+::comme::as::0::1::
+::travailler::to work::0::1::
+::difficile::difficult::0::1::
+::semaine::week::0::1::
+::ces::these::0::1::
+::différent::different::0::1::
+::réponse::reply::0::1::
+::numéro::number::0::1::
+::ai::have::0::1::
+::prince::prince::0::1::
+::comprendre::understand::0::1::
+::tout::all::0::1::
+::bizarre::weird::0::1::
+::jour::day::0::1::
+::mais::but::0::1::
+::bureau::office::0::1::
+::seulement::only::0::1::
+::enfin::finally::0::1::
+::seigneur::Lord::0::1::
+::année::year::0::1::
+::présente::present::0::1::
+::nouveau::new::0::1::
+::gouvernement::government::0::1::
+::toutes::all::0::1::
+::comment::how::0::1::
+::froid::cold::0::1::
+::poser::to pose::0::1::
+::maintenant::now::0::1::
+::bon::good::0::1::
+::fenêtre::window::0::1::
+::sa::her::0::1::
+::décider::decide::0::1::
+::oublier::forget::0::1::
+::on::we::0::1::
+::bravo::Bravo::0::1::
+::avait::had::0::1::
+::système::system::0::1::
+::madame::Mrs::0::1::
+::début::beginning::0::1::
+::radio::radio::0::1::
+::non::no::0::1::
+::ah::ha::0::1::
+::attention::Warning::0::1::
+::les::the::0::1::
+::aurez::will::0::1::
+::visite::visit::0::1::
+::demander::request::0::1::
+::danser::dance::0::1::
+::vrai::True::0::1::
+::autre::other::0::1::
+::toute::all::0::1::
+::noir::black::0::1::
+::cacher::hide::0::1::
+::connaître::know::0::1::
+::continuer::Carry on::0::1::
+::écrire::to write::0::1::
+::combien::how much::0::1::
+::groupe::group::0::1::
+::fermer::to close::0::1::
+::eux::them::0::1::
+::là::the::0::1::
+::arrêté::stopped::0::1::
+::sur::sure::0::1::
+::tête::head::0::1::
+::femme::wife::0::1::
+::coucher::sleep::0::1::
+::aie::Ouch::0::1::
+::ton::your::0::1::
+::allô::Hello::0::1::
+::possible::possible::0::1::
+::problème::problem::0::1::
+::bordel::whorehouse::0::1::
+::de::of::0::1::
+::rester::stay::0::1::
+::euh::uh::0::1::
+::simple::simple::0::1::
+::changer::change::0::1::
+::david::david::0::1::
+::boire::to drink::0::1::
+::grande::great::0::1::
+::chanter::sing::0::1::
+::homme::man::0::1::
+::ensemble::together::0::1::
+::cinq::five::0::1::
+::heureux::happy::0::1::
+::million::million::0::1::
+::commencer::to start::0::1::
+::écouter::listen::0::1::
+::ma::my::0::1::
+::nuit::night::0::1::
+::le::the::0::1::
+::an::year::0::1::
+::protéger::protect::0::1::
+::arriver::arrive::0::1::
+::répondre::reply::0::1::
+::malade::sick::0::1::
+::ok::OK::0::1::
+::pourra::will::0::1::
+::longtemps::long time::0::1::
+::exemple::example::0::1::
+::ou::or::0::1::
+::musique::music::0::1::
+::votre::your::0::1::
+::connu::known::0::1::
+::coup::stroke::0::1::
+::secret::secret::0::1::
+::notre::our::0::1::
+::fin::end::0::1::
+::comme::as::0::1::
+::travailler::to work::0::1::
+::chez::in::0::1::
+::bébé::baby::0::1::
+::chambre::bedroom::0::1::
+::déjà::already::0::1::
+::manger::eat::0::1::
+::cette::this::2::1::
+::si::if::0::1::
+::aider::help::0::1::
+::désolé::sorry::0::1::
+::enfin::finally::0::1::
+::femme::wife::0::1::
+::lui::him::0::1::
+::malade::sick::0::1::
+::arriver::arrive::0::1::
+::garçon::boy::0::1::
+::nouvelle::new::0::1::
+::ah::ha::0::1::
+::autre::other::0::1::
+::ma::my::0::1::
+::coup::stroke::0::1::
+::facile::easy::0::1::
+::demander::request::0::1::
+::aide::help::0::1::
+::beaucoup::a lot::0::1::
+::heureux::happy::0::1::
+::plaisir::pleasure::0::1::
+::nos::our::2::1::
+::bonjour::Hello::0::1::
+::prendre::take::2::1::
+::poser::to put down, lay, pose, sit::284::1::
+::eux::them::0::1::
+::depuis::since::0::1::
+::musique::music::0::1::
+::chance::luck::0::1::
+::président::President::0::1::
+::moins::less::0::1::
+::rien::nothing::2::1::
+::semaine::week::2::1::
+::tête::head::0::1::
+::cinq::five::0::1::
+::grand::great::0::1::
+::eau::water::0::1::
+::hé::Hey::2::1::
+::bon::good::0::1::
+::raison::reason::0::1::
+::heure::hour::0::1::
+::leur::their::0::1::
+::ces::these::0::1::
+::seulement::only::0::1::
+::entre::enter::0::1::
+::cet::this::0::1::
+::mettre::to put::0::1::
+::besoin::need::0::1::
+::café::coffee::0::1::
+::ni::or::0::1::
+::jour::day::0::1::
+::eh::eh::0::1::
+::ou::or::0::1::
+::elles::they::0::1::
+::sans::without::0::1::
+::attention::Warning::0::1::
+::homme::man::0::1::
+::ok::OK::0::1::
+::entrer::enter::0::1::
+::ils::theyrefers to a group of masculine or mixed masculine::feminine nouns ::0::
+::guerre::war::0::1::
+::madame::Mrs::0::1::
+::seigneur::Lord::0::1::
+::ami::friend::0::1::
+::passer::pass::0::1::
+::ici::right here::0::1::
+::problème::problem::0::1::
+::ses::his::0::1::
+::amour::love::0::1::
+::numéro::number::0::1::
+::longtemps::long time::0::1::
+::décider::decide::0::1::
+::bon::good::0::1::
+::chez::in::0::1::
+::chanson::song::0::1::
+::tout::all::0::1::
+::david::david::0::1::
+::lu::read::0::1::
+::ici::right here::0::1::
+::dix::ten::0::1::
+::amis::friends::0::1::
+::erreur::error::0::1::
+::ton::your::0::1::
+::attaque::attack::0::1::
+::arriver::arrive::0::1::
+::guerre::war::0::1::
+::beaucoup::a lot::0::1::
+::carte::map::0::1::
+::nos::our::0::1::
+::votre::your::0::1::
+::femme::wife::0::1::
+::dangereux::dangerous::0::1::
+::rien::nothing::0::1::
+::amoureux::lover::0::1::
+::garder::keep::0::1::
+::visite::visit::0::1::
+::eau::water::0::1::
+::fin::end::0::1::
+::ok::OK::0::1::
+::besoin::need::0::1::
+::après::after::0::1::
+::chanter::sing::0::1::
+::falloir::have to::0::1::
+::bizarre::weird::0::1::
+::ciel::sky::0::1::
+::excuser::excuse::0::1::
+::nuit::night::0::1::
+::depuis::since::0::1::
+::noir::black::0::1::
+::entre::enter::0::1::
+::partir::go::0::1::
+::ii::ii::0::1::
+::poser::to pose::0::1::
+::ressemble::looks like::0::1::
+::désolé::sorry::0::1::
+::à::at::0::1::
+::entrer::enter::0::1::
+::parti::left::0::1::
+::leur::their::0::1::
+::début::beginning::0::1::
+::euh::uh::0::1::
+::an::year::0::1::
+::sa::her::0::1::
+::amour::love::0::1::
+::enfin::finally::0::1::
+::bob::bob::0::1::
+::etre::be::0::1::
+::boire::to drink::0::1::
+::ah::ha::0::1::
+::exemple::example::0::1::
+::libre::free::0::1::
+::là::the::0::1::
+::présente::present::0::1::
+::combat::fight::0::1::
+::deux::two::0::1::
+::santé::health::0::1::
+::maintenant::now::0::1::
+::notre::our::0::1::
+::enfant::child::0::1::
+::garçon::boy::0::1::
+::facile::easy::0::1::
+::écrire::to write::0::1::
+::un::a::0::1::
+::dès::from::0::1::
+::quand::when::0::1::
+::aide::help::0::1::
+::demander::request::0::1::
+::devoir::duty::0::1::
+::déjà::already::0::1::
+::michael::michael::0::1::
+::heure::hour::0::1::
+::préparer::to prepare::0::1::
+::on::we::0::1::
+::belle::beautiful::0::1::
+::grande::great::0::1::
+::seulement::only::0::1::
+::continuer::Carry on::0::1::
+::aurez::will::0::1::
+::malade::sick::0::1::
+::de::of::0::1::
+::paul::paul::0::1::
+::normal::normal::0::1::
+::film::movie::0::1::
+::faire::make::0::1::
+::bébé::baby::0::1::
+::lieutenant::lieutenant::0::1::
+::dirai::tell::0::1::
+::sécurité::security::0::1::
+::eh::eh::0::1::
+::essayer::try::0::1::
+::ma::my::0::1::
+::groupe::group::0::1::
+::livre::book::0::1::
+::non::no::0::1::
+::mais::but::0::1::
+::près::near::0::1::
+::madame::Mrs::0::1::
+::aimer::like::0::1::
+::raison::reason::0::1::
+::bravo::Bravo::0::1::
+::coucher::sleep::0::1::
+::fermer::to close::0::1::
+::numéro::number::0::1::
+::écrit::written::0::1::
+::million::million::0::1::
+::possible::possible::0::1::
+::vrai::True::0::1::
+::commencer::to start::0::1::
+::moins::less::0::1::
+::simple::simple::0::1::
+::longtemps::long time::0::1::
+::ou::or::0::1::
+::bureau::office::0::1::
+::seul::alone::0::1::
+::connaître::know::0::1::
+::comme::as::0::1::
+::fumer::smoke::0::1::
+::plan::plan::0::1::
+::cinq::five::0::1::
+::répondre::reply::0::1::
+::eux::them::0::1::
+::toutes::all::0::1::
+::attention::Warning::0::1::
+::jour::day::0::1::
+::réponse::reply::0::1::
+::ami::friend::0::1::
+::allô::Hello::0::1::
+::chambre::bedroom::0::1::
+::heureux::happy::0::1::
+::ces::these::0::1::
+::musique::music::0::1::
+::complètement::completely::0::1::
+::huit::eight::0::1::
+::changer::change::0::1::
+::situation::situation::0::1::
+::toute::all::0::1::
+::rue::street::0::1::
+::système::system::0::1::
+::ensemble::together::0::1::
+::comprendre::understand::0::1::
+::sans::without::0::1::
+::elles::they::0::1::
+::les::the::0::1::
+::quitter::to leave::0::1::
+::bordel::whorehouse::0::1::
+::président::President::0::1::
+::finir::finish::0::1::
+::a::at::0::1::
+::ai::have::0::1::
+::nouveau::new::0::1::
+::mettre::to put::0::1::
+::problème::problem::0::1::
+::certain::certain::0::1::
+::écouter::listen::0::1::
+::café::coffee::0::1::
+::ouvrir::open::0::1::
+::froid::cold::0::1::
+::cet::this::0::1::
+::manger::eat::0::1::
+::rester::stay::0::1::
+::hé::Hey::0::1::
+::grand::great::0::1::
+::pourra::will::0::1::
+::danser::dance::0::1::
+::bonjour::Hello::0::1::
+::armée::army::0::1::
+::radio::radio::0::1::
+::seigneur::Lord::0::1::
+::cacher::hide::0::1::
+::nouvelle::new::0::1::
+::marier::marry::0::1::
+::ecoutez::ecoutez::0::1::
+::cette::this::0::1::
+::sérieux::serious::0::1::
+::sur::sure::0::1::
+::ils::they::0::1::
+::son::his::0::1::
+::avait::had::0::1::
+::connu::known::0::1::
+::prendre::take::0::1::
+::aider::help::0::1::
+::secret::secret::0::1::
+::ni::or::0::1::
+::différent::different::0::1::
+::forme::form::0::1::
+::semaine::week::0::1::
+::passer::pass::0::1::
+::docteur::doctor::0::1::
+::si::if::0::1::
+::homme::man::0::1::
+::clé::key::0::1::
+::lui::him::0::1::
+::faim::hunger::0::1::
+::sais::know::0::1::
+::il::he::0::1::
+::plaisir::pleasure::0::1::
+::le::the::0::1::
+::année::year::0::1::
+::choisir::to choose::0::1::
+::important::important::0::1::
+::prince::prince::0::1::
+::arrêté::stopped::0::1::
+::ses::his::0::1::
+::aie::Ouch::0::1::
+::tête::head::0::1::
+::protéger::protect::0::1::
+::difficile::difficult::0::1::
+::chance::luck::0::1::
+::fenêtre::window::0::1::
+::oublier::forget::0::1::
+::travailler::to work::0::1::
+::m::m::0::1::
+::comment::how::0::1::
+::coup::stroke::0::1::
+::prenez::take::0::1::
+::autre::other::0::1::
+::combien::how much::0::1::
+::gouvernement::government::0::1::
+::bordel::whorehouse::0::1::
+::écouter::listen::0::1::
+::devoir::duty::0::1::
+::quitter::to leave::0::1::
+::euh::uh::0::1::
+::besoin::need::0::1::
+::finir::finish::0::1::
+::bon::good::0::1::
+::là::the::0::1::
+::plan::plan::0::1::
+::rester::stay::0::1::
+::ton::your::0::1::
+::erreur::error::0::1::
+::musique::music::0::1::
+::paul::paul::0::1::
+::armée::army::0::1::
+::gouvernement::government::0::1::
+::amis::friends::0::1::
+::livre::book::0::1::
+::comprendre::understand::0::1::
+::un::a::0::1::
+::tout::all::0::1::
+::million::million::0::1::
+::partir::go::0::1::
+::ai::have::0::1::
+::mais::but::0::1::
+::moins::less::0::1::
+::film::movie::0::1::
+::les::the::0::1::
+::notre::our::0::1::
+::exemple::example::0::1::
+::président::President::0::1::
+::à::at::0::1::
+::après::after::0::1::
+::chance::luck::0::1::
+::préparer::to prepare::0::1::
+::travailler::to work::0::1::
+::bravo::Bravo::0::1::
+::aurez::will::0::1::
+::prendre::take::2::1::
+::beaucoup::a lot::0::1::
+::non::no::0::1::
+::bureau::office::0::1::
+::attention::Warning::0::1::
+::arrêté::stopped::0::1::
+::sécurité::security::0::1::
+::bob::bob::0::1::
+::avait::had::0::1::
+::faire::make::0::1::
+::répondre::reply::0::1::
+::michael::michael::0::1::
+::son::his::0::1::
+::ouvrir::open::0::1::
+::demander::request::0::1::
+::aimer::like::0::1::
+::pourra::will::0::1::
+::depuis::since::0::1::
+::allô::Hello::0::1::
+::dangereux::dangerous::0::1::
+::prenez::take::0::1::
+::ma::my::0::1::
+::certain::certain::0::1::
+::réponse::reply::0::1::
+::sans::without::0::1::
+::garçon::boy::0::1::
+::danser::dance::0::1::
+::fenêtre::window::0::1::
+::possible::possible::0::1::
+::secret::secret::0::1::
+::m::m::0::1::
+::jour::day::0::1::
+::ah::ha::0::1::
+::manger::eat::0::1::
+::enfant::child::0::1::
+::heure::hour::0::1::
+::excuser::excuse::0::1::
+::café::coffee::0::1::
+::homme::man::0::1::
+::nos::our::2::1::
+::combat::fight::0::1::
+::ressemble::looks like::0::1::
+::situation::situation::0::1::
+::décider::decide::0::1::
+::forme::form::0::1::
+::eau::water::0::1::
+::difficile::difficult::0::1::
+::cet::this::0::1::
+::sur::sure::0::1::
+::david::david::0::1::
+::il::he::0::1::
+::clé::key::0::1::
+::essayer::try::0::1::
+::ni::or::0::1::
+::ok::OK::0::1::
+::malade::sick::0::1::
+::ecoutez::ecoutez::0::1::
+::seigneur::Lord::0::1::
+::connu::known::0::1::
+::combien::how much::0::1::
+::garder::keep::0::1::
+::a::at::0::1::
+::chanter::sing::0::1::
+::on::we::0::1::
+::amour::love::0::1::
+::seul::alone::0::1::
+::passer::pass::0::1::
+::belle::beautiful::0::1::
+::lui::him::0::1::
+::ils::theyrefers to a group of masculine or mixed masculine::feminine nouns ::0::
+::ou::or::0::1::
+::amoureux::lover::0::1::
+::système::system::0::1::
+::différent::different::0::1::
+::dès::from::0::1::
+::eux::them::0::1::
+::si::if::0::1::
+::guerre::war::0::1::
+::toutes::all::0::1::
+::continuer::Carry on::0::1::
+::nouveau::new::0::1::
+::écrire::to write::0::1::
+::heureux::happy::0::1::
+::docteur::doctor::0::1::
+::simple::simple::0::1::
+::toute::all::0::1::
+::changer::change::0::1::
+::ensemble::together::0::1::
+::chez::in::0::1::
+::fermer::to close::0::1::
+::eh::eh::0::1::
+::carte::map::0::1::
+::falloir::have to::0::1::
+::mettre::to put::0::1::
+::coucher::sleep::0::1::
+::ces::these::0::1::
+::autre::other::0::1::
+::seulement::only::0::1::
+::nouvelle::new::0::1::
+::an::year::0::1::
+::groupe::group::0::1::
+::noir::black::0::1::
+::parti::left::0::1::
+::coup::stroke::0::1::
+::marier::marry::0::1::
+::chanson::song::0::1::
+::aide::help::0::1::
+::bonjour::Hello::0::1::
+::dirai::tell::0::1::
+::femme::wife::0::1::
+::deux::two::0::1::
+::votre::your::0::1::
+::bizarre::weird::0::1::
+::comme::as::0::1::
+::fumer::smoke::0::1::
+::semaine::week::0::1::
+::libre::free::0::1::
+::fin::end::0::1::
+::ses::his::0::1::
+::comment::how::0::1::
+::attaque::attack::0::1::
+::visite::visit::0::1::
+::vrai::True::0::1::
+::protéger::protect::0::1::
+::entre::enter::0::1::
+::bébé::baby::0::1::
+::plaisir::pleasure::0::1::
+::choisir::to choose::0::1::
+::ciel::sky::0::1::
+::début::beginning::0::1::
+::ii::ii::0::1::
+::commencer::to start::0::1::
+::lieutenant::lieutenant::0::1::
+::déjà::already::0::1::
+::raison::reason::0::1::
+::sérieux::serious::0::1::
+::madame::Mrs::0::1::
+::leur::their::0::1::
+::rue::street::0::1::
+::près::near::0::1::
+::grand::great::0::1::
+::dix::ten::0::1::
+::prince::prince::0::1::
+::rien::nothing::0::1::
+::complètement::completely::0::1::
+::maintenant::now::0::1::
+::numéro::number::0::1::
+::écrit::written::0::1::
+::enfin::finally::0::1::
+::de::of::0::1::
+::hé::Hey::2::1::
+::grande::great::0::1::
+::aider::help::0::1::
+::sais::know::0::1::
+::ici::right here::0::1::
+::santé::health::0::1::
+::sa::her::0::1::
+::entrer::enter::0::1::
+::froid::cold::0::1::
+::elles::they::0::1::
+::présente::present::0::1::
+::cette::this::2::1::
+::oublier::forget::0::1::
+::radio::radio::0::1::
+::connaître::know::0::1::
+::normal::normal::0::1::
+::cinq::five::0::1::
+::année::year::0::1::
+::arriver::arrive::0::1::
+::aie::Ouch::0::1::
+::chambre::bedroom::0::1::
+::poser::to put down, lay, pose, sit::284::1::
+::longtemps::long time::0::1::
+::problème::problem::0::1::
+::désolé::sorry::0::1::
+::huit::eight::0::1::
+::nuit::night::0::1::
+::lu::read::0::1::
+::faim::hunger::0::1::
+::boire::to drink::0::1::
+::important::important::0::1::
+::facile::easy::0::1::
+::etre::be::0::1::
+::le::the::0::1::
+::ami::friend::0::1::
+::tête::head::0::1::
+::quand::when::0::1::
+::cacher::hide::0::1::
+::échapper::to escape, get away, slip, run away::126::1::
+::baiser::kiss::100::1::
